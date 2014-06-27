@@ -1,0 +1,14 @@
+img.deed-preview {
+	max-width: 105px;
+	max-height: 50%;
+	float: left;
+	margin-right: 5px;
+}
+
+.deed-more-detail{
+	position: absolute;
+	top: 50%;
+	margin-top: -14px;
+	height: 28px;
+	right: 5px;
+}

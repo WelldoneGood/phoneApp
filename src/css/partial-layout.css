@@ -1,0 +1,25 @@
+.subpage {
+	height: 100%;
+	overflow: hidden;
+}
+
+.subpage-title-bar {
+	background: gray;	
+	padding: 5px;
+	border: 1px solid #ddd;
+	height: 40px;
+}
+
+.subpage-title-text {
+	line-height: 2;
+	font-weight: bold;
+}
+
+.subpage-body {
+	/*padding-bottom: 45px;*/
+	padding-bottom: 5px;
+	/*margin-bottom: -40px;*/
+	overflow-y: auto;
+	-webkit-overflow-scroll: touch;
+	height: 100%;
+}

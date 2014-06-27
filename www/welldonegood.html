@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="welldonegood" style="height: 100%;">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/welldonegood.css">
+    
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <script type="text/javascript" src="js/hammer/hammer.min.js"></script>
+	<script type="text/javascript" src="js/facebook/openfb.js"></script>
+
+    <script type="text/javascript" src="js/angular/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular/ui-bootstrap-tpls-0.10.0.min.js"></script>
+    <script type="text/javascript" src="js/angular/angular-ui-router.min.js"></script>
+    
+    <script type="text/javascript" src="js/welldonegood.js"></script>
+
+    <style>
+        
+
+    </style>
+
+    <title>Well Done Good</title>
+</head>
+<body>  
+
+    <script>
+    document.addEventListener("deviceready", function() {
+        console.log("Device ready");
+    });
+    </script>
+    <div class="page-container full-height" ng-controller="mainPageController">
+
+        <!-- top navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <img class="navbar-brand" src="images/HeaderLarge.png" />
+                <i ng-click="toggleMenu()" class="fa fa-bars fa-2x navbar-icon"></i>
+                <i ui-sref="capture({deedId:0})" class="fa fa-camera-retro fa-2x navbar-icon"></i>
+            </div>
+        </div>
+
+        <div class="container-fluid main-window">
+            <div class="row row-offcanvas row-offcanvas-left full-height" ng-class="showMenu ? 'active' : ''">
+
+            <!-- sidebar -->
+            <div class="col-xs-6 col-sm-3 sidebar-offcanvas full-height" id="sidebar" role="navigation">
+                <div class="sidebar-holder">
+                    <!-- Added ng-click to toggleMenu to ensure meun closes -->
+                    <ul class="nav fixed-nav" ng-click="toggleMenu()">
+                        <li><a ui-sref="deedFeed"><i class="fa fa-rss fa-1x"></i> Deed Feed</a></li>
+                        <li><a ui-sref="mobilize"><i class="fa fa-bullhorn fa-1x"></i> Mobilize</a></li>
+                        <li><a ui-sref="toDeed"><i class="fa fa-lightbulb-o fa-1x"></i> ToDeed</a></li>
+                        <li><a ui-sref="completed"><i class="fa fa-check-square-o fa-1x"></i> Completed</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- main area -->
+            <div class="col-xs-12 col-sm-12 full-height">
+                <div class="full-height" ui-view></div>
+            </div><!-- /.col-xs-12 main -->
+        </div><!--/.row-->
+    </div><!--/.container-->
+</div><!--/.page-container-->
+
+
+
+</body>
+</html>
