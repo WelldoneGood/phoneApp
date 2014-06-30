@@ -105,7 +105,7 @@ welldonegoodControllers.controller('captureController' , ['$scope', '$stateParam
 						var alertTitle = "Post Deed";
 						var alertButtons = 'Retry, Cancel';
 
-						navigator.notification.confirm(alertMessage, $scope.post, alertTitle, alertButtons);	
+						navigator.notification.confirm(alertMessage, postNotificationCallback, alertTitle, alertButtons);	
 					} else {
 						alert("Error loading Data");
 					}
@@ -130,6 +130,12 @@ welldonegoodControllers.controller('captureController' , ['$scope', '$stateParam
 		var notificationCallback = function(buttonIndex){
 			if (buttonIndex === 1) {
 				$scope.loadFeedData();
+			}
+		}
+
+		var postNotificationCallback = function(buttonIndex){
+			if (buttonIndex === 1) {
+				$scope.post();
 			}
 		}
 	}]);
