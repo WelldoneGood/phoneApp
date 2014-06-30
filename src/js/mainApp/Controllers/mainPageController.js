@@ -7,11 +7,19 @@ welldonegoodControllers.controller('mainPageController' , ['$scope', '$rootScope
                $scope.showMenu = false;
 
                 if(toState.name == "deed") {
-                    console.log(toParams);
                     if (device.platform == "Android") {
                         window.open(toParams.deedURL, '_blank', 'location=yes,closebuttoncaption=Done');
                     } else {
                         window.open(toParams.deedURL, '_blank', 'location=no,closebuttoncaption=Done');    
+                    }
+                    event.preventDefault();
+                }
+
+                if(toState.name == "privacy") {
+                    if (device.platform == "Android") {
+                        window.open(welldonegoodEndpoints.privacyPolicy, '_blank', 'location=yes,closebuttoncaption=Done');
+                    } else {
+                        window.open(welldonegoodEndpoints.privacyPolicy, '_blank', 'location=no,closebuttoncaption=Done');    
                     }
                     event.preventDefault();
                 }

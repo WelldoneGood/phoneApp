@@ -6,7 +6,12 @@ welldonegoodControllers.controller('captureController' , ['$scope', '$stateParam
 
 		DeedService.getAllToDeeds().then(function(data){
 			if(data) {
-				$scope.deedIdeas = data.posts;
+				if (data.posts && data.posts.length > 1) {
+					$scope.deedIdeas = data.posts;
+				} else {
+					$scope.deedIdeas = [];
+				}
+
 				$scope.deedIdeas.push({
 					id: null,
 					title: "Create your own"
@@ -89,7 +94,7 @@ welldonegoodControllers.controller('captureController' , ['$scope', '$stateParam
 
 			DeedService.postDeed($scope.photo, deedPost).then(function(result) {
 				console.log(result);
-				if (result) {
+				if (result && result.status && result.status !== "error") {
 					$scope.posting = false;
 					$state.go('share', {deedURL: encodeURIComponent(result.post.url)});
 				} else {
