@@ -52,6 +52,7 @@ virtuosumLoginServices.service('LoginService', ['$http', '$q',
             $http.post(virtuosumLoginEndpoints.login, loginData, config)
                 .success(function(data, status, header) {
                     virtuosumLoginDeferred.resolve(true);
+                    
                 })
                 .error(function(data) {
                     virtuosumLoginDeferred.resolve(false);

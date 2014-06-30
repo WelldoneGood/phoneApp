@@ -6,6 +6,14 @@ virtuosumLoginControllers.controller('loginController', ['$scope', '$rootScope',
 			$scope.completeFacebookLogin();
         }, false);
 
+        $scope.viewTermsOfService = function() {
+            if (device.platform == "Android") {
+                window.open(virtuosumLoginEndpoints.termsOfService, '_blank', 'location=yes,closebuttoncaption=Done');
+            } else {
+                window.open(virtuosumLoginEndpoints.termsOfService, '_blank', 'location=no,closebuttoncaption=Done');    
+            }
+        }
+
         $scope.loginWithFacebook = function() {
         	openFB.login('email', $scope.completeFacebookLogin,$scope.loginError);
         }
