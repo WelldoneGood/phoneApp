@@ -68,6 +68,11 @@ welldonegoodControllers.controller('completedDeedController', ['$scope', '$rootS
 				if (data) {
 					$scope.totalPages = data.pages;
 					$scope.completedDeeds = data.posts;
+
+					//catch the case where our posts are malformed
+					if (!$scope.completedDeeds) {
+						$scope.completedDeeds = [];
+					}
 					$scope.loadFinished = true;
 				} else {
 					//throw an alert
