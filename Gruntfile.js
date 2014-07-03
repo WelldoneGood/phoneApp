@@ -15,23 +15,12 @@ module.exports = function(grunt) {
           separator: ';\n'
         },
         src: [
-          'src/js/mainApp/app.js', 
-          'src/js/mainApp/Controllers/*.js', 
-          'src/js/mainApp/Services/*.js',
-          'src/js/mainApp/Directives/*.js'
+          'src/js/app.js', 
+          'src/js/Controllers/*.js', 
+          'src/js/Services/*.js',
+          'src/js/Directives/*.js'
         ],
         dest: 'www/js/<%= pkg.name %>.js'
-      },
-      javascriptLogin: {
-        options: {
-          separator: ';\n'
-        },
-        src: [
-        'src/js/login/app.js',
-        'src/js/login/Controllers/*.js',
-        'src/js/login/Services/*.js'
-        ],
-        dest: 'www/js/<%= pkg.name %>Login.js'
       }
     }
   });
