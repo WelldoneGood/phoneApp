@@ -57,10 +57,10 @@
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/fonts \
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/images \
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/index.html \
+/Users/kmager/workspace/welldonegood/platforms/android/assets/www/index_backup.html \
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/js \
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/partials \
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/plugins \
-/Users/kmager/workspace/welldonegood/platforms/android/assets/www/welldonegood.html \
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/css/bootstrap.min.css \
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/css/font-awesome.min.css \
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/css/img \
@@ -95,6 +95,8 @@
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/partials/capture.html \
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/partials/completed.html \
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/partials/deedFeed.html \
+/Users/kmager/workspace/welldonegood/platforms/android/assets/www/partials/loading.html \
+/Users/kmager/workspace/welldonegood/platforms/android/assets/www/partials/login.html \
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/partials/mobilize.html \
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/partials/share.html \
 /Users/kmager/workspace/welldonegood/platforms/android/assets/www/partials/toDeed.html \

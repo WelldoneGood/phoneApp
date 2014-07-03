@@ -1,35 +1,31 @@
-virtuosumLoginControllers.controller('loginController', ['$scope', '$rootScope', '$window', 'LoginService',
-	function($scope, $rootScope, $window, LoginService) {
-		$scope.loginReady = false;
-        $scope.isios = false;
-
-		$rootScope.$on('deviceready', function() {
-            if (device.platform === 'iOS' && parseFloat(device.version) >= 7.0) {
-                $scope.isios = true;
-            }
-			$scope.completeFacebookLogin();
-        }, false);
+welldonegoodControllers.controller('loginController', ['$scope', '$rootScope', '$window', '$state', 'loginService',
+	function($scope, $rootScope, $window, $state, loginService) {
+		$scope.loginReady = true;
+        console.log("Going to login - HERE");
 
         $scope.viewTermsOfService = function() {
             if (device.platform == "Android") {
-                window.open(virtuosumLoginEndpoints.termsOfService, '_blank', 'location=yes,closebuttoncaption=Done');
+                window.open(welldonegoodEndpoints.termsOfService, '_blank', 'location=yes,closebuttoncaption=Done');
             } else {
-                window.open(virtuosumLoginEndpoints.termsOfService, '_blank', 'location=no,closebuttoncaption=Done');    
+                window.open(welldonegoodEndpoints.termsOfService, '_blank', 'location=no,closebuttoncaption=Done');    
             }
         }
 
         $scope.loginWithFacebook = function() {
+            $scope.loginReady = false;
         	openFB.login('email', $scope.completeFacebookLogin,$scope.loginError);
         }
 
         $scope.completeFacebookLogin = function() {
-        	var loginInformation = LoginService.verifyLogin();
+            //Check to see if the facebook login worked
+        	var loginInformation = loginService.verifyLogin();
         	if (loginInformation.token) {
-
-	      		LoginService.getVirtuosumCookie(loginInformation.type, loginInformation.token)
+                //get the welldonegood cookie based on the loginInformation from the service
+	      		loginService.getWellDoneGoodCookie(loginInformation)
 	      		.then(function(result){
 	      			if (result) {
-	      				$window.location = virtuosumLoginEndpoints.mainAppLocation;
+                        rootScope.$broadcast('loginComplete');
+	      				$state.go('deedFeed');
 	      			} else {
 	      				$scope.loginError();
 	      			}

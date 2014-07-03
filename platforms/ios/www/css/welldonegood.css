@@ -40,7 +40,7 @@ html {
 }
 
 body {
-    padding-top: 50px;  
+    /*padding-top: 50px;  */
     height: 100%;
     /*background-color: rgb(127,23,31);*/
 }
@@ -54,6 +54,7 @@ body {
 
 .main-window {
     height: 100%;
+    padding-top: 50px;
     position: relative;
     overflow-x: hidden; 
 }
@@ -302,6 +303,19 @@ body {
 	/*background-color: LightSeaGreen;*/
 	background-color: rgb(53,94,59);
 	font-family: Papyrus, fantasy;
+}
+
+.loader {
+	font-size: 2em;
+    padding: 20px;
+    color: gainsboro;
+    text-shadow: 1px 1px 10px black;
+}
+
+.main-logo {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
 }
 
 .navbar-header {

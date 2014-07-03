@@ -43,10 +43,7 @@ welldonegoodControllers.controller('deedFeedController', ['$scope', '$state', 'D
 		}
 
 		var handler = function() {
-	        // a small timeout to demo the loading state
-	        setTimeout(function() {
-	            $scope.loadFeedData();
-	        }, 1000);
+	        $scope.loadFeedData();
 	    };
 
 	    SwipeToReloadService.init('deedFeedContainer', 'deedFeedPullrefresh', 'deedFeedPullrefresh-icon', 'deedFeedContent', handler);

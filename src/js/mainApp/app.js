@@ -1,6 +1,17 @@
 var welldonegoodApp = angular.module('welldonegood', ['ui.bootstrap', 'ui.router', 'welldonegoodControllers', 'welldonegoodServices'])
     .config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/deedFeed");
+        $urlRouterProvider.otherwise("/loading");
+
+        $stateProvider.state('loading', {
+            url: "/loading",
+            templateUrl: "partials/loading.html"
+        });
+
+        $stateProvider.state('login', {
+            url: "/login",
+            templateUrl: "partials/login.html",
+            controller: 'loginController'
+        });
 
         $stateProvider.state('toDeed', {
             url: "/toDeed",
@@ -52,12 +63,15 @@ var welldonegoodApp = angular.module('welldonegood', ['ui.bootstrap', 'ui.router
 var welldonegoodControllers = angular.module('welldonegoodControllers', []);
 var welldonegoodServices = angular.module('welldonegoodServices', []);
 var welldonegoodEndpoints = {
+    facebookAppID: '609372205806860',
+    login: 'http://welldonegood.com/wp-login.php?loggedout=true',
     deedFeedLocation: 'http://welldonegood.com/?json=get_recent_posts',
     completedDeedLocation: 'http://welldonegood.com/?json=get_author_posts',
     deedIdeaLocation: 'http://welldonegood.com/?json=get_category_posts&slug=deedinspirations',
     nonceLocation: 'http://welldonegood.com/?json=get_nonce&controller=posts&method=create_post&callback=?',
     createPost: 'http://welldonegood.com/?json=create_post',
     userInformation: 'http://welldonegood.com/?json=currentuser/get_currentuserinfo',
+    termsOfService: 'http://www.welldonegood.com/terms-of-service/',
     privacyPolicy: 'http://www.welldonegood.com/privacy-policy'
     // deedFeedLocation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=get_recent_posts',
     // completedDeedLocation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=get_author_posts',

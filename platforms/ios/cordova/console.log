@@ -1217,3 +1217,525 @@ libc++abi.dylib: terminating with uncaught exception of type NSException
 2014-06-26 20:48:52.839 Well Done Good[28810:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
 2014-06-26 20:48:53.655 Well Done Good[28810:70b] Resetting plugins due to page load.
 2014-06-26 20:48:53.750 Well Done Good[28810:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-06-28 07:28:43.231 Well Done Good[28810:70b] THREAD WARNING: ['Device'] took '22.361816' ms. Plugin should use a background thread.
+2014-06-28 07:28:43.840 Well Done Good[28810:70b] THREAD WARNING: ['Notification'] took '374.036133' ms. Plugin should use a background thread.
+2014-06-28 07:29:12.015 Well Done Good[32836:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-28 07:29:12.092 Well Done Good[32836:70b] Unlimited access to network resources
+2014-06-28 07:29:12.539 Well Done Good[32836:70b] [CDVTimer][file] 1.128018ms
+2014-06-28 07:29:12.694 Well Done Good[32836:70b] [CDVTimer][splashscreen] 154.446006ms
+2014-06-28 07:29:12.694 Well Done Good[32836:70b] [CDVTimer][TotalPluginStartup] 156.095982ms
+2014-06-28 07:29:13.597 Well Done Good[32836:70b] Resetting plugins due to page load.
+2014-06-28 07:29:13.891 Well Done Good[32836:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-28 07:29:15.073 Well Done Good[32836:70b] Resetting plugins due to page load.
+2014-06-28 07:29:15.169 Well Done Good[32836:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-06-28 07:30:00.112 Well Done Good[32836:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-28 07:30:00.127 Well Done Good[32836:70b] THREAD WARNING: ['InAppBrowser'] took '247.571045' ms. Plugin should use a background thread.
+2014-06-28 07:30:00.131 Well Done Good[32836:70b] Tried to show IAB while already shown
+2014-06-28 07:30:01.635 Well Done Good[32836:70b] webView:didFailLoadWithError - -999: The operation couldn’t be completed. (NSURLErrorDomain error -999.)
+2014-06-28 07:34:18.094 Well Done Good[33025:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-28 07:34:18.101 Well Done Good[33025:70b] Unlimited access to network resources
+2014-06-28 07:34:18.132 Well Done Good[33025:70b] [CDVTimer][file] 1.727998ms
+2014-06-28 07:34:18.176 Well Done Good[33025:70b] [CDVTimer][splashscreen] 44.026017ms
+2014-06-28 07:34:18.176 Well Done Good[33025:70b] [CDVTimer][TotalPluginStartup] 46.307027ms
+2014-06-28 07:34:18.727 Well Done Good[33025:70b] Resetting plugins due to page load.
+2014-06-28 07:34:19.117 Well Done Good[33025:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-28 07:34:33.273 Well Done Good[33025:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-28 07:34:33.277 Well Done Good[33025:70b] THREAD WARNING: ['InAppBrowser'] took '41.640137' ms. Plugin should use a background thread.
+2014-06-28 07:34:33.658 Well Done Good[33025:70b] Warning: Attempt to dismiss from view controller <MainViewController: 0xa4a41c0> while a presentation or dismiss is in progress!
+2014-06-28 07:36:02.539 Well Done Good[33025:3e07] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2014-06-28 07:36:02.546 Well Done Good[33025:70b] Resetting plugins due to page load.
+2014-06-28 07:36:02.546 Well Done Good[33025:70b] IAB.close() called but it was already closed.
+2014-06-28 07:36:02.862 Well Done Good[33025:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html
+2014-06-28 07:36:44.559 Well Done Good[33197:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-28 07:36:44.573 Well Done Good[33197:70b] Unlimited access to network resources
+2014-06-28 07:36:44.606 Well Done Good[33197:70b] [CDVTimer][file] 1.406014ms
+2014-06-28 07:36:44.636 Well Done Good[33197:70b] [CDVTimer][splashscreen] 29.124022ms
+2014-06-28 07:36:44.636 Well Done Good[33197:70b] [CDVTimer][TotalPluginStartup] 31.096041ms
+2014-06-28 07:36:45.020 Well Done Good[33197:70b] Resetting plugins due to page load.
+2014-06-28 07:36:45.199 Well Done Good[33197:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-28 07:36:45.504 Well Done Good[33197:70b] Resetting plugins due to page load.
+2014-06-28 07:36:45.569 Well Done Good[33197:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-06-28 07:37:49.560 Well Done Good[33362:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-28 07:37:49.575 Well Done Good[33362:70b] Unlimited access to network resources
+2014-06-28 07:37:49.604 Well Done Good[33362:70b] [CDVTimer][file] 1.627982ms
+2014-06-28 07:37:49.636 Well Done Good[33362:70b] [CDVTimer][splashscreen] 31.507969ms
+2014-06-28 07:37:49.637 Well Done Good[33362:70b] [CDVTimer][TotalPluginStartup] 33.769011ms
+2014-06-28 07:37:49.995 Well Done Good[33362:70b] Resetting plugins due to page load.
+2014-06-28 07:37:50.193 Well Done Good[33362:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-28 07:38:14.635 Well Done Good[33362:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-28 07:38:14.639 Well Done Good[33362:70b] THREAD WARNING: ['InAppBrowser'] took '132.624268' ms. Plugin should use a background thread.
+2014-06-28 07:38:15.017 Well Done Good[33362:70b] Warning: Attempt to dismiss from view controller <MainViewController: 0xa60c310> while a presentation or dismiss is in progress!
+2014-06-28 07:40:00.780 Well Done Good[33362:70b] Resetting plugins due to page load.
+2014-06-28 07:40:00.781 Well Done Good[33362:70b] IAB.close() called but it was already closed.
+2014-06-28 07:40:00.952 Well Done Good[33362:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html
+2014-06-28 07:40:20.650 Well Done Good[33362:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-28 13:49:38.391 Well Done Good[33811:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-28 13:49:38.398 Well Done Good[33811:70b] Unlimited access to network resources
+2014-06-28 13:49:38.430 Well Done Good[33811:70b] [CDVTimer][file] 1.067042ms
+2014-06-28 13:49:38.438 Well Done Good[33811:70b] [CDVTimer][splashscreen] 7.596016ms
+2014-06-28 13:49:38.438 Well Done Good[33811:70b] [CDVTimer][TotalPluginStartup] 9.616971ms
+2014-06-28 13:49:38.553 Well Done Good[33811:70b] Resetting plugins due to page load.
+2014-06-28 13:49:38.770 Well Done Good[33811:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-28 13:50:55.558 Well Done Good[33980:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-28 13:50:55.565 Well Done Good[33980:70b] Unlimited access to network resources
+2014-06-28 13:50:55.585 Well Done Good[33980:70b] [CDVTimer][file] 1.758993ms
+2014-06-28 13:50:55.595 Well Done Good[33980:70b] [CDVTimer][splashscreen] 9.038985ms
+2014-06-28 13:50:55.595 Well Done Good[33980:70b] [CDVTimer][TotalPluginStartup] 11.972964ms
+2014-06-28 13:50:55.714 Well Done Good[33980:70b] Resetting plugins due to page load.
+2014-06-28 13:50:55.876 Well Done Good[33980:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-28 13:50:56.282 Well Done Good[33980:70b] Resetting plugins due to page load.
+2014-06-28 13:50:56.363 Well Done Good[33980:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-06-28 13:51:19.249 Well Done Good[33980:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-28 13:51:19.253 Well Done Good[33980:70b] THREAD WARNING: ['InAppBrowser'] took '34.827148' ms. Plugin should use a background thread.
+2014-06-28 13:51:55.817 Well Done Good[34146:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-28 13:51:55.824 Well Done Good[34146:70b] Unlimited access to network resources
+2014-06-28 13:51:55.841 Well Done Good[34146:70b] [CDVTimer][file] 1.145005ms
+2014-06-28 13:51:55.849 Well Done Good[34146:70b] [CDVTimer][splashscreen] 7.628977ms
+2014-06-28 13:51:55.849 Well Done Good[34146:70b] [CDVTimer][TotalPluginStartup] 9.751976ms
+2014-06-28 13:51:55.898 Well Done Good[34146:70b] Resetting plugins due to page load.
+2014-06-28 13:51:56.045 Well Done Good[34146:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-28 13:52:18.406 Well Done Good[34146:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-28 13:52:18.410 Well Done Good[34146:70b] THREAD WARNING: ['InAppBrowser'] took '22.506836' ms. Plugin should use a background thread.
+2014-06-28 13:52:18.828 Well Done Good[34146:3f03] bool _WebTryThreadLock(bool), 0xa3582f0: Multiple locks on web thread not allowed! Please file a bug. Crashing now...
+1   0x50efe78 WebRunLoopLock(__CFRunLoopObserver*, unsigned long, void*)
+2   0x10236e __CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__
+3   0x1022bf __CFRunLoopDoObservers
+4   0xe017e __CFRunLoopRun
+5   0xdf9d3 CFRunLoopRunSpecific
+6   0xdf7eb CFRunLoopRunInMode
+7   0x50efe40 RunWebThread(void*)
+8   0x2e2b5fb _pthread_body
+9   0x2e2b485 _pthread_struct_init
+10  0x2e30cf2 thread_start
+2014-06-28 13:54:48.443 Well Done Good[34321:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-28 13:54:48.450 Well Done Good[34321:70b] Unlimited access to network resources
+2014-06-28 13:54:48.467 Well Done Good[34321:70b] [CDVTimer][file] 1.051009ms
+2014-06-28 13:54:48.475 Well Done Good[34321:70b] [CDVTimer][splashscreen] 7.337987ms
+2014-06-28 13:54:48.475 Well Done Good[34321:70b] [CDVTimer][TotalPluginStartup] 9.359002ms
+2014-06-28 13:54:48.524 Well Done Good[34321:70b] Resetting plugins due to page load.
+2014-06-28 13:54:48.710 Well Done Good[34321:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-28 13:54:49.223 Well Done Good[34321:70b] Resetting plugins due to page load.
+2014-06-28 13:54:50.206 Well Done Good[34321:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-06-28 13:54:56.034 Well Done Good[34321:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-28 13:54:56.040 Well Done Good[34321:70b] THREAD WARNING: ['InAppBrowser'] took '27.503906' ms. Plugin should use a background thread.
+2014-06-28 13:54:56.044 Well Done Good[34321:70b] Tried to show IAB while already shown
+2014-06-28 13:58:11.110 Well Done Good[34488:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-28 13:58:11.116 Well Done Good[34488:70b] Unlimited access to network resources
+2014-06-28 13:58:11.138 Well Done Good[34488:70b] [CDVTimer][file] 1.513958ms
+2014-06-28 13:58:11.147 Well Done Good[34488:70b] [CDVTimer][splashscreen] 8.121014ms
+2014-06-28 13:58:11.147 Well Done Good[34488:70b] [CDVTimer][TotalPluginStartup] 10.632992ms
+2014-06-28 13:58:11.193 Well Done Good[34488:70b] Resetting plugins due to page load.
+2014-06-28 13:58:11.336 Well Done Good[34488:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-28 13:58:11.833 Well Done Good[34488:70b] Resetting plugins due to page load.
+2014-06-28 13:58:11.957 Well Done Good[34488:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-06-28 13:58:31.393 Well Done Good[34488:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-28 13:58:31.397 Well Done Good[34488:70b] THREAD WARNING: ['InAppBrowser'] took '20.394775' ms. Plugin should use a background thread.
+2014-06-28 13:59:13.963 Well Done Good[34488:70b] THREAD WARNING: ['Camera'] took '150.697021' ms. Plugin should use a background thread.
+2014-06-28 14:01:37.276 Well Done Good[34488:171f] File Transfer Finished with response code 200
+2014-06-28 14:01:48.303 Well Done Good[34488:3d0b] File Transfer Finished with response code 200
+2014-06-28 14:02:19.756 Well Done Good[34488:33b] File Transfer Finished with response code 200
+2014-06-29 18:23:47.220 Well Done Good[35663:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-29 18:23:47.442 Well Done Good[35663:70b] Unlimited access to network resources
+2014-06-29 18:23:48.469 Well Done Good[35663:70b] [CDVTimer][file] 12.179971ms
+2014-06-29 18:23:49.420 Well Done Good[35663:70b] [CDVTimer][splashscreen] 951.191008ms
+2014-06-29 18:23:49.421 Well Done Good[35663:70b] [CDVTimer][TotalPluginStartup] 964.586973ms
+2014-06-29 18:23:53.241 Well Done Good[35663:70b] Resetting plugins due to page load.
+2014-06-29 18:23:55.015 Well Done Good[35663:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-29 18:23:56.145 Well Done Good[35663:70b] THREAD WARNING: ['Device'] took '35.927734' ms. Plugin should use a background thread.
+2014-06-29 18:46:21.761 Well Done Good[36053:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-29 18:46:21.949 Well Done Good[36053:70b] Unlimited access to network resources
+2014-06-29 18:46:23.097 Well Done Good[36053:70b] [CDVTimer][file] 18.287003ms
+2014-06-29 18:46:23.442 Well Done Good[36053:70b] [CDVTimer][splashscreen] 344.946980ms
+2014-06-29 18:46:23.443 Well Done Good[36053:70b] [CDVTimer][TotalPluginStartup] 364.243984ms
+2014-06-29 18:46:25.495 Well Done Good[36053:70b] Resetting plugins due to page load.
+2014-06-29 18:46:26.429 Well Done Good[36053:70b] THREAD WARNING: ['Device'] took '16.034180' ms. Plugin should use a background thread.
+2014-06-29 18:46:26.432 Well Done Good[36053:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-29 18:46:26.843 Well Done Good[36053:70b] Resetting plugins due to page load.
+2014-06-29 18:46:26.956 Well Done Good[36053:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-06-29 18:47:19.088 Well Done Good[36053:70b] Resetting plugins due to page load.
+2014-06-29 18:47:26.728 Well Done Good[36053:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-06-29 18:47:31.649 Well Done Good[36053:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-29 18:47:31.737 Well Done Good[36053:70b] THREAD WARNING: ['InAppBrowser'] took '522.755859' ms. Plugin should use a background thread.
+2014-06-29 19:36:17.199 Well Done Good[36272:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-29 19:36:17.239 Well Done Good[36272:70b] Unlimited access to network resources
+2014-06-29 19:36:17.374 Well Done Good[36272:70b] [CDVTimer][file] 1.129031ms
+2014-06-29 19:36:17.518 Well Done Good[36272:70b] [CDVTimer][splashscreen] 143.541992ms
+2014-06-29 19:36:17.518 Well Done Good[36272:70b] [CDVTimer][TotalPluginStartup] 145.739019ms
+2014-06-29 19:36:18.611 Well Done Good[36272:70b] Resetting plugins due to page load.
+2014-06-29 19:36:19.024 Well Done Good[36272:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-29 19:36:37.865 Well Done Good[36272:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-29 19:36:37.979 Well Done Good[36272:70b] THREAD WARNING: ['InAppBrowser'] took '649.912842' ms. Plugin should use a background thread.
+2014-06-29 19:37:26.744 Well Done Good[36439:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-29 19:37:26.769 Well Done Good[36439:70b] Unlimited access to network resources
+2014-06-29 19:37:26.806 Well Done Good[36439:70b] [CDVTimer][file] 1.190007ms
+2014-06-29 19:37:26.891 Well Done Good[36439:70b] [CDVTimer][splashscreen] 84.572971ms
+2014-06-29 19:37:26.892 Well Done Good[36439:70b] [CDVTimer][TotalPluginStartup] 86.777985ms
+2014-06-29 19:37:27.548 Well Done Good[36439:70b] Resetting plugins due to page load.
+2014-06-29 19:37:28.067 Well Done Good[36439:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-29 20:01:40.370 Well Done Good[36637:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-29 20:01:40.584 Well Done Good[36637:70b] Unlimited access to network resources
+2014-06-29 20:01:41.977 Well Done Good[36637:70b] [CDVTimer][file] 11.404991ms
+2014-06-29 20:01:42.362 Well Done Good[36637:70b] [CDVTimer][splashscreen] 384.936988ms
+2014-06-29 20:01:42.363 Well Done Good[36637:70b] [CDVTimer][TotalPluginStartup] 397.283971ms
+2014-06-29 20:01:46.598 Well Done Good[36637:70b] Resetting plugins due to page load.
+2014-06-29 20:01:47.044 Well Done Good[36637:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-29 20:04:26.168 Well Done Good[36815:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-29 20:04:26.434 Well Done Good[36815:70b] Unlimited access to network resources
+2014-06-29 20:04:27.438 Well Done Good[36815:70b] [CDVTimer][file] 18.619001ms
+2014-06-29 20:04:27.672 Well Done Good[36815:70b] [CDVTimer][splashscreen] 233.045995ms
+2014-06-29 20:04:27.672 Well Done Good[36815:70b] [CDVTimer][TotalPluginStartup] 252.601027ms
+2014-06-29 20:04:30.180 Well Done Good[36815:70b] Resetting plugins due to page load.
+2014-06-29 20:04:31.120 Well Done Good[36815:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-29 20:04:31.147 Well Done Good[36815:70b] THREAD WARNING: ['Device'] took '12.157715' ms. Plugin should use a background thread.
+2014-06-29 20:04:38.582 Well Done Good[36815:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-29 20:04:38.689 Well Done Good[36815:70b] THREAD WARNING: ['InAppBrowser'] took '506.621094' ms. Plugin should use a background thread.
+2014-06-29 20:19:56.533 Well Done Good[37045:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-29 20:19:56.693 Well Done Good[37045:70b] Unlimited access to network resources
+2014-06-29 20:19:57.784 Well Done Good[37045:70b] [CDVTimer][file] 2.003968ms
+2014-06-29 20:19:58.425 Well Done Good[37045:70b] [CDVTimer][splashscreen] 640.711963ms
+2014-06-29 20:19:58.425 Well Done Good[37045:70b] [CDVTimer][TotalPluginStartup] 643.827975ms
+2014-06-29 20:20:00.044 Well Done Good[37045:70b] Resetting plugins due to page load.
+2014-06-29 20:20:01.191 Well Done Good[37045:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-29 20:20:03.855 Well Done Good[37045:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-29 20:20:03.879 Well Done Good[37045:70b] THREAD WARNING: ['InAppBrowser'] took '361.186768' ms. Plugin should use a background thread.
+2014-06-29 20:20:06.411 Well Done Good[37045:70b] Resetting plugins due to page load.
+2014-06-29 20:20:06.411 Well Done Good[37045:70b] IAB.close() called but it was already closed.
+2014-06-29 20:20:06.975 Well Done Good[37045:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-06-29 20:23:53.677 Well Done Good[37225:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-29 20:23:53.697 Well Done Good[37225:70b] Unlimited access to network resources
+2014-06-29 20:23:53.809 Well Done Good[37225:70b] [CDVTimer][file] 1.121998ms
+2014-06-29 20:23:53.910 Well Done Good[37225:70b] [CDVTimer][splashscreen] 100.279987ms
+2014-06-29 20:23:53.911 Well Done Good[37225:70b] [CDVTimer][TotalPluginStartup] 102.401018ms
+2014-06-29 20:23:54.933 Well Done Good[37225:70b] Resetting plugins due to page load.
+2014-06-29 20:23:55.206 Well Done Good[37225:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-29 20:23:55.873 Well Done Good[37225:70b] Resetting plugins due to page load.
+2014-06-29 20:23:55.957 Well Done Good[37225:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-06-29 20:24:26.044 Well Done Good[37225:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-29 20:24:26.063 Well Done Good[37225:70b] THREAD WARNING: ['InAppBrowser'] took '237.716797' ms. Plugin should use a background thread.
+2014-06-29 20:24:42.829 Well Done Good[37391:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-29 20:24:43.041 Well Done Good[37391:70b] Unlimited access to network resources
+2014-06-29 20:24:43.147 Well Done Good[37391:70b] [CDVTimer][file] 1.410961ms
+2014-06-29 20:24:43.225 Well Done Good[37391:70b] [CDVTimer][splashscreen] 78.001022ms
+2014-06-29 20:24:43.226 Well Done Good[37391:70b] [CDVTimer][TotalPluginStartup] 80.700994ms
+2014-06-29 20:24:43.666 Well Done Good[37391:70b] Resetting plugins due to page load.
+2014-06-29 20:24:43.966 Well Done Good[37391:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-29 20:24:44.415 Well Done Good[37391:70b] Resetting plugins due to page load.
+2014-06-29 20:24:44.500 Well Done Good[37391:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-06-29 20:27:39.833 Well Done Good[37598:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-29 20:27:39.893 Well Done Good[37598:70b] Unlimited access to network resources
+2014-06-29 20:27:40.120 Well Done Good[37598:70b] [CDVTimer][file] 52.252948ms
+2014-06-29 20:27:40.728 Well Done Good[37598:70b] [CDVTimer][splashscreen] 607.707977ms
+2014-06-29 20:27:40.728 Well Done Good[37598:70b] [CDVTimer][TotalPluginStartup] 660.916984ms
+2014-06-29 20:27:41.151 Well Done Good[37598:70b] Resetting plugins due to page load.
+2014-06-29 20:27:41.522 Well Done Good[37598:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-29 20:27:42.365 Well Done Good[37598:70b] Resetting plugins due to page load.
+2014-06-29 20:27:42.470 Well Done Good[37598:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-06-29 20:30:16.484 Well Done Good[37598:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-29 20:30:16.638 Well Done Good[37598:70b] THREAD WARNING: ['InAppBrowser'] took '521.965820' ms. Plugin should use a background thread.
+2014-06-29 20:30:16.754 Well Done Good[37598:70b] Tried to show IAB while already shown
+2014-06-29 20:30:16.756 Well Done Good[37598:70b] Tried to show IAB while already shown
+2014-06-29 20:30:16.758 Well Done Good[37598:70b] Tried to show IAB while already shown
+2014-06-29 20:30:16.760 Well Done Good[37598:70b] Tried to show IAB while already shown
+2014-06-29 20:30:17.440 Well Done Good[37598:70b] webView:didFailLoadWithError - -999: The operation couldn’t be completed. (NSURLErrorDomain error -999.)
+2014-06-29 20:30:17.474 Well Done Good[37598:70b] webView:didFailLoadWithError - -999: The operation couldn’t be completed. (NSURLErrorDomain error -999.)
+2014-06-29 20:30:17.487 Well Done Good[37598:70b] webView:didFailLoadWithError - -999: The operation couldn’t be completed. (NSURLErrorDomain error -999.)
+2014-06-29 20:30:17.502 Well Done Good[37598:70b] webView:didFailLoadWithError - -999: The operation couldn’t be completed. (NSURLErrorDomain error -999.)
+2014-06-29 20:30:25.814 Well Done Good[37598:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-06-29 20:30:35.549 Well Done Good[37598:70b] Camera.getPicture: source type 1 not available.
+2014-06-29 20:30:40.516 Well Done Good[37598:70b] THREAD WARNING: ['Camera'] took '4976.029297' ms. Plugin should use a background thread.
+2014-06-29 20:32:28.319 Well Done Good[37598:70b] THREAD WARNING: ['Camera'] took '1273.043945' ms. Plugin should use a background thread.
+2014-06-29 20:33:08.431 Well Done Good[37598:70b] THREAD WARNING: ['FileTransfer'] took '43.839844' ms. Plugin should use a background thread.
+2014-06-29 20:33:08.781 Well Done Good[37598:6b1b] File Transfer Finished with response code 200
+2014-06-29 20:33:08.850 Well Done Good[37598:70b] THREAD WARNING: ['Notification'] took '42.774170' ms. Plugin should use a background thread.
+2014-06-29 20:33:12.157 Well Done Good[37598:6b1b] File Transfer Finished with response code 200
+2014-06-29 20:33:12.179 Well Done Good[37598:70b] THREAD WARNING: ['Notification'] took '17.745850' ms. Plugin should use a background thread.
+2014-06-29 20:33:13.893 Well Done Good[37598:6b1b] File Transfer Finished with response code 200
+2014-06-29 20:33:13.974 Well Done Good[37598:70b] THREAD WARNING: ['Notification'] took '76.032227' ms. Plugin should use a background thread.
+2014-06-29 20:33:15.806 Well Done Good[37598:6b1b] File Transfer Finished with response code 200
+2014-06-29 20:33:17.915 Well Done Good[37598:6b1b] File Transfer Finished with response code 200
+2014-06-29 20:33:19.300 Well Done Good[37598:7057] File Transfer Finished with response code 200
+2014-06-29 20:40:43.928 Well Done Good[37807:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-29 20:40:44.025 Well Done Good[37807:70b] Unlimited access to network resources
+2014-06-29 20:40:44.367 Well Done Good[37807:70b] [CDVTimer][file] 1.362979ms
+2014-06-29 20:40:44.606 Well Done Good[37807:70b] [CDVTimer][splashscreen] 238.761008ms
+2014-06-29 20:40:44.607 Well Done Good[37807:70b] [CDVTimer][TotalPluginStartup] 241.095006ms
+2014-06-29 20:40:45.882 Well Done Good[37807:70b] Resetting plugins due to page load.
+2014-06-29 20:40:46.800 Well Done Good[37807:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-06-29 20:40:47.844 Well Done Good[37807:70b] Resetting plugins due to page load.
+2014-06-29 20:40:48.045 Well Done Good[37807:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-06-29 20:41:13.310 Well Done Good[37807:70b] THREAD WARNING: ['Camera'] took '617.304199' ms. Plugin should use a background thread.
+2014-06-29 20:41:17.365 Well Done Good[37807:70b] THREAD WARNING: ['FileTransfer'] took '14.004883' ms. Plugin should use a background thread.
+2014-06-29 20:41:17.721 Well Done Good[37807:1203] File Transfer Finished with response code 200
+2014-06-29 20:41:17.766 Well Done Good[37807:70b] THREAD WARNING: ['Notification'] took '42.615967' ms. Plugin should use a background thread.
+2014-06-29 20:41:19.474 Well Done Good[37807:1203] File Transfer Finished with response code 200
+2014-07-02 20:44:50.639 Well Done Good[93221:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-02 20:44:50.903 Well Done Good[93221:70b] Unlimited access to network resources
+2014-07-02 20:44:54.024 Well Done Good[93221:70b] [CDVTimer][file] 81.245005ms
+2014-07-02 20:44:54.861 Well Done Good[93221:70b] [CDVTimer][splashscreen] 836.488008ms
+2014-07-02 20:44:54.861 Well Done Good[93221:70b] [CDVTimer][TotalPluginStartup] 918.723047ms
+2014-07-02 20:44:56.018 Well Done Good[93221:70b] Resetting plugins due to page load.
+2014-07-02 20:45:02.806 Well Done Good[93221:70b] THREAD WARNING: ['Device'] took '36.350098' ms. Plugin should use a background thread.
+2014-07-02 20:45:03.236 Well Done Good[93221:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-07-02 20:45:03.931 Well Done Good[93221:70b] Resetting plugins due to page load.
+2014-07-02 20:45:04.821 Well Done Good[93221:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-07-02 20:45:10.692 Well Done Good[93438:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-02 20:45:10.719 Well Done Good[93438:70b] Unlimited access to network resources
+2014-07-02 20:45:10.744 Well Done Good[93438:70b] [CDVTimer][file] 1.067996ms
+2014-07-02 20:45:10.802 Well Done Good[93438:70b] [CDVTimer][splashscreen] 57.623982ms
+2014-07-02 20:45:10.803 Well Done Good[93438:70b] [CDVTimer][TotalPluginStartup] 59.765041ms
+2014-07-02 20:45:11.100 Well Done Good[93438:70b] Resetting plugins due to page load.
+2014-07-02 20:45:11.282 Well Done Good[93438:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-07-02 20:45:11.769 Well Done Good[93438:70b] Resetting plugins due to page load.
+2014-07-02 20:45:11.858 Well Done Good[93438:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-07-02 20:47:55.919 Well Done Good[93949:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-02 20:47:55.946 Well Done Good[93949:70b] Unlimited access to network resources
+2014-07-02 20:47:55.975 Well Done Good[93949:70b] [CDVTimer][file] 1.762986ms
+2014-07-02 20:47:56.007 Well Done Good[93949:70b] [CDVTimer][splashscreen] 31.035006ms
+2014-07-02 20:47:56.007 Well Done Good[93949:70b] [CDVTimer][TotalPluginStartup] 33.940017ms
+2014-07-02 20:47:56.383 Well Done Good[93949:70b] Resetting plugins due to page load.
+2014-07-02 20:47:56.582 Well Done Good[93949:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-07-02 20:47:57.073 Well Done Good[93949:70b] Resetting plugins due to page load.
+2014-07-02 20:47:57.150 Well Done Good[93949:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-07-03 06:32:59.478 Well Done Good[93949:70b] THREAD WARNING: ['Device'] took '102.787842' ms. Plugin should use a background thread.
+2014-07-03 06:33:04.129 Well Done Good[93949:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-07-03 06:33:04.384 Well Done Good[93949:70b] THREAD WARNING: ['InAppBrowser'] took '3630.139160' ms. Plugin should use a background thread.
+2014-07-03 06:33:21.927 Well Done Good[14930:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 06:33:21.984 Well Done Good[14930:70b] Unlimited access to network resources
+2014-07-03 06:33:22.154 Well Done Good[14930:70b] [CDVTimer][file] 1.422048ms
+2014-07-03 06:33:22.409 Well Done Good[14930:70b] [CDVTimer][splashscreen] 254.441977ms
+2014-07-03 06:33:22.409 Well Done Good[14930:70b] [CDVTimer][TotalPluginStartup] 257.008970ms
+2014-07-03 06:33:23.909 Well Done Good[14930:70b] Resetting plugins due to page load.
+2014-07-03 06:33:24.899 Well Done Good[14930:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-07-03 06:33:26.649 Well Done Good[14930:70b] Resetting plugins due to page load.
+2014-07-03 06:33:26.792 Well Done Good[14930:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-07-03 06:33:49.108 Well Done Good[15165:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 06:33:49.131 Well Done Good[15165:70b] Unlimited access to network resources
+2014-07-03 06:33:49.149 Well Done Good[15165:70b] [CDVTimer][file] 1.058996ms
+2014-07-03 06:33:49.158 Well Done Good[15165:70b] [CDVTimer][splashscreen] 8.020997ms
+2014-07-03 06:33:49.158 Well Done Good[15165:70b] [CDVTimer][TotalPluginStartup] 10.074019ms
+2014-07-03 06:33:49.327 Well Done Good[15165:70b] Resetting plugins due to page load.
+2014-07-03 06:33:49.552 Well Done Good[15165:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-07-03 06:33:49.938 Well Done Good[15165:70b] Resetting plugins due to page load.
+2014-07-03 06:33:50.038 Well Done Good[15165:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/deedFeed
+2014-07-03 07:12:13.684 Well Done Good[19965:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:12:13.709 Well Done Good[19965:70b] Unlimited access to network resources
+2014-07-03 07:12:13.727 Well Done Good[19965:70b] [CDVTimer][file] 1.157999ms
+2014-07-03 07:12:13.774 Well Done Good[19965:70b] [CDVTimer][splashscreen] 46.047032ms
+2014-07-03 07:12:13.774 Well Done Good[19965:70b] [CDVTimer][TotalPluginStartup] 48.138976ms
+2014-07-03 07:12:14.567 Well Done Good[19965:70b] Resetting plugins due to page load.
+2014-07-03 07:12:14.917 Well Done Good[19965:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/index.html
+2014-07-03 07:12:15.706 Well Done Good[19965:70b] Resetting plugins due to page load.
+2014-07-03 07:12:15.763 Well Done Good[19965:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/22E6657E-2D64-48F7-8043-97F18400F7E7/Well%20Done%20Good.app/www/welldonegood.html#/loading
+2014-07-03 07:14:49.333 Well Done Good[20459:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:14:49.426 Well Done Good[20459:70b] Unlimited access to network resources
+2014-07-03 07:14:49.446 Well Done Good[20459:70b] [CDVTimer][file] 1.946986ms
+2014-07-03 07:14:49.523 Well Done Good[20459:70b] [CDVTimer][splashscreen] 76.471984ms
+2014-07-03 07:14:49.523 Well Done Good[20459:70b] [CDVTimer][TotalPluginStartup] 79.499006ms
+2014-07-03 07:14:50.118 Well Done Good[20459:70b] Resetting plugins due to page load.
+2014-07-03 07:14:50.364 Well Done Good[20459:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:16:17.367 Well Done Good[20807:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:16:17.384 Well Done Good[20807:70b] Unlimited access to network resources
+2014-07-03 07:16:17.417 Well Done Good[20807:70b] [CDVTimer][file] 1.428962ms
+2014-07-03 07:16:17.444 Well Done Good[20807:70b] [CDVTimer][splashscreen] 26.165009ms
+2014-07-03 07:16:17.444 Well Done Good[20807:70b] [CDVTimer][TotalPluginStartup] 28.843999ms
+2014-07-03 07:16:17.875 Well Done Good[20807:70b] Resetting plugins due to page load.
+2014-07-03 07:16:18.035 Well Done Good[20807:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:17:52.671 Well Done Good[21174:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:17:52.697 Well Done Good[21174:70b] Unlimited access to network resources
+2014-07-03 07:17:52.731 Well Done Good[21174:70b] [CDVTimer][file] 1.451015ms
+2014-07-03 07:17:52.818 Well Done Good[21174:70b] [CDVTimer][splashscreen] 85.911989ms
+2014-07-03 07:17:52.818 Well Done Good[21174:70b] [CDVTimer][TotalPluginStartup] 88.400006ms
+2014-07-03 07:17:53.683 Well Done Good[21174:70b] Resetting plugins due to page load.
+2014-07-03 07:17:54.228 Well Done Good[21174:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:18:53.461 Well Done Good[21475:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:18:53.488 Well Done Good[21475:70b] Unlimited access to network resources
+2014-07-03 07:18:53.521 Well Done Good[21475:70b] [CDVTimer][file] 1.406014ms
+2014-07-03 07:18:53.547 Well Done Good[21475:70b] [CDVTimer][splashscreen] 25.538027ms
+2014-07-03 07:18:53.547 Well Done Good[21475:70b] [CDVTimer][TotalPluginStartup] 28.006017ms
+2014-07-03 07:18:53.949 Well Done Good[21475:70b] Resetting plugins due to page load.
+2014-07-03 07:18:54.125 Well Done Good[21475:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:19:42.616 Well Done Good[21748:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:19:42.632 Well Done Good[21748:70b] Unlimited access to network resources
+2014-07-03 07:19:42.665 Well Done Good[21748:70b] [CDVTimer][file] 1.319051ms
+2014-07-03 07:19:42.694 Well Done Good[21748:70b] [CDVTimer][splashscreen] 28.535962ms
+2014-07-03 07:19:42.694 Well Done Good[21748:70b] [CDVTimer][TotalPluginStartup] 30.910015ms
+2014-07-03 07:19:43.109 Well Done Good[21748:70b] Resetting plugins due to page load.
+2014-07-03 07:19:43.263 Well Done Good[21748:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:21:23.342 Well Done Good[21748:70b] Resetting plugins due to page load.
+2014-07-03 07:21:23.627 Well Done Good[21748:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/login
+2014-07-03 07:23:59.691 Well Done Good[21748:70b] Resetting plugins due to page load.
+2014-07-03 07:24:20.379 Well Done Good[21748:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/login
+2014-07-03 07:24:29.359 Well Done Good[21748:70b] Resetting plugins due to page load.
+2014-07-03 07:24:33.709 Well Done Good[21748:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/login
+2014-07-03 07:24:36.463 Well Done Good[21748:70b] Resetting plugins due to page load.
+2014-07-03 07:24:36.726 Well Done Good[21748:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/login
+2014-07-03 07:26:17.941 Well Done Good[22708:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:26:17.967 Well Done Good[22708:70b] Unlimited access to network resources
+2014-07-03 07:26:18.022 Well Done Good[22708:70b] [CDVTimer][file] 1.353979ms
+2014-07-03 07:26:18.076 Well Done Good[22708:70b] [CDVTimer][splashscreen] 53.750992ms
+2014-07-03 07:26:18.077 Well Done Good[22708:70b] [CDVTimer][TotalPluginStartup] 56.195021ms
+2014-07-03 07:26:18.635 Well Done Good[22708:70b] Resetting plugins due to page load.
+2014-07-03 07:26:18.817 Well Done Good[22708:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:26:44.047 Well Done Good[22708:70b] Resetting plugins due to page load.
+2014-07-03 07:26:44.226 Well Done Good[22708:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/login
+2014-07-03 07:26:53.974 Well Done Good[22708:70b] Resetting plugins due to page load.
+2014-07-03 07:26:54.252 Well Done Good[22708:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/login
+2014-07-03 07:27:02.078 Well Done Good[22708:70b] Resetting plugins due to page load.
+2014-07-03 07:27:02.336 Well Done Good[22708:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/login
+2014-07-03 07:30:18.402 Well Done Good[23364:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:30:18.410 Well Done Good[23364:70b] Unlimited access to network resources
+2014-07-03 07:30:18.440 Well Done Good[23364:70b] [CDVTimer][file] 1.425982ms
+2014-07-03 07:30:18.468 Well Done Good[23364:70b] [CDVTimer][splashscreen] 26.766956ms
+2014-07-03 07:30:18.468 Well Done Good[23364:70b] [CDVTimer][TotalPluginStartup] 29.245973ms
+2014-07-03 07:30:18.838 Well Done Good[23364:70b] Resetting plugins due to page load.
+2014-07-03 07:30:19.047 Well Done Good[23364:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:31:50.355 Well Done Good[23724:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:31:50.377 Well Done Good[23724:70b] Unlimited access to network resources
+2014-07-03 07:31:50.421 Well Done Good[23724:70b] [CDVTimer][file] 1.386046ms
+2014-07-03 07:31:50.460 Well Done Good[23724:70b] [CDVTimer][splashscreen] 38.435042ms
+2014-07-03 07:31:50.460 Well Done Good[23724:70b] [CDVTimer][TotalPluginStartup] 40.947020ms
+2014-07-03 07:31:50.878 Well Done Good[23724:70b] Resetting plugins due to page load.
+2014-07-03 07:31:51.101 Well Done Good[23724:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:32:38.551 Well Done Good[23998:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:32:38.578 Well Done Good[23998:70b] Unlimited access to network resources
+2014-07-03 07:32:38.611 Well Done Good[23998:70b] [CDVTimer][file] 1.296997ms
+2014-07-03 07:32:38.638 Well Done Good[23998:70b] [CDVTimer][splashscreen] 26.729047ms
+2014-07-03 07:32:38.639 Well Done Good[23998:70b] [CDVTimer][TotalPluginStartup] 29.030979ms
+2014-07-03 07:32:39.019 Well Done Good[23998:70b] Resetting plugins due to page load.
+2014-07-03 07:32:39.205 Well Done Good[23998:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:33:09.678 Well Done Good[24231:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:33:09.684 Well Done Good[24231:70b] Unlimited access to network resources
+2014-07-03 07:33:09.713 Well Done Good[24231:70b] [CDVTimer][file] 2.669990ms
+2014-07-03 07:33:09.721 Well Done Good[24231:70b] [CDVTimer][splashscreen] 7.508993ms
+2014-07-03 07:33:09.722 Well Done Good[24231:70b] [CDVTimer][TotalPluginStartup] 11.237025ms
+2014-07-03 07:33:09.848 Well Done Good[24231:70b] Resetting plugins due to page load.
+2014-07-03 07:33:09.986 Well Done Good[24231:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:33:14.213 Well Done Good[24231:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-07-03 07:33:14.228 Well Done Good[24231:70b] THREAD WARNING: ['InAppBrowser'] took '161.991943' ms. Plugin should use a background thread.
+2014-07-03 07:33:15.213 Well Done Good[24231:70b] webView:didFailLoadWithError - -999: The operation couldn’t be completed. (NSURLErrorDomain error -999.)
+2014-07-03 07:37:18.670 Well Done Good[24899:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:37:18.697 Well Done Good[24899:70b] Unlimited access to network resources
+2014-07-03 07:37:18.714 Well Done Good[24899:70b] [CDVTimer][file] 1.062036ms
+2014-07-03 07:37:18.747 Well Done Good[24899:70b] [CDVTimer][splashscreen] 32.655001ms
+2014-07-03 07:37:18.748 Well Done Good[24899:70b] [CDVTimer][TotalPluginStartup] 34.767032ms
+2014-07-03 07:37:19.405 Well Done Good[24899:70b] Resetting plugins due to page load.
+2014-07-03 07:37:19.643 Well Done Good[24899:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:38:50.630 Well Done Good[25256:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:38:50.654 Well Done Good[25256:70b] Unlimited access to network resources
+2014-07-03 07:38:50.688 Well Done Good[25256:70b] [CDVTimer][file] 1.147032ms
+2014-07-03 07:38:50.717 Well Done Good[25256:70b] [CDVTimer][splashscreen] 27.969956ms
+2014-07-03 07:38:50.717 Well Done Good[25256:70b] [CDVTimer][TotalPluginStartup] 30.080020ms
+2014-07-03 07:38:51.254 Well Done Good[25256:70b] Resetting plugins due to page load.
+2014-07-03 07:38:51.422 Well Done Good[25256:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:39:00.937 Well Done Good[25256:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-07-03 07:39:00.941 Well Done Good[25256:70b] THREAD WARNING: ['InAppBrowser'] took '122.808105' ms. Plugin should use a background thread.
+2014-07-03 07:39:19.923 Well Done Good[25256:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-07-03 07:41:11.960 Well Done Good[25716:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:41:11.992 Well Done Good[25716:70b] Unlimited access to network resources
+2014-07-03 07:41:12.026 Well Done Good[25716:70b] [CDVTimer][file] 1.155972ms
+2014-07-03 07:41:12.066 Well Done Good[25716:70b] [CDVTimer][splashscreen] 39.492011ms
+2014-07-03 07:41:12.066 Well Done Good[25716:70b] [CDVTimer][TotalPluginStartup] 41.931033ms
+2014-07-03 07:41:12.483 Well Done Good[25716:70b] Resetting plugins due to page load.
+2014-07-03 07:41:12.678 Well Done Good[25716:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:44:02.585 Well Done Good[26220:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:44:02.629 Well Done Good[26220:70b] Unlimited access to network resources
+2014-07-03 07:44:02.676 Well Done Good[26220:70b] [CDVTimer][file] 1.295984ms
+2014-07-03 07:44:02.751 Well Done Good[26220:70b] [CDVTimer][splashscreen] 74.325979ms
+2014-07-03 07:44:02.752 Well Done Good[26220:70b] [CDVTimer][TotalPluginStartup] 76.723993ms
+2014-07-03 07:44:03.488 Well Done Good[26220:70b] Resetting plugins due to page load.
+2014-07-03 07:44:03.737 Well Done Good[26220:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:46:45.175 Well Done Good[26724:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:46:45.191 Well Done Good[26724:70b] Unlimited access to network resources
+2014-07-03 07:46:45.225 Well Done Good[26724:70b] [CDVTimer][file] 1.170993ms
+2014-07-03 07:46:45.263 Well Done Good[26724:70b] [CDVTimer][splashscreen] 38.109004ms
+2014-07-03 07:46:45.264 Well Done Good[26724:70b] [CDVTimer][TotalPluginStartup] 40.277958ms
+2014-07-03 07:46:45.652 Well Done Good[26724:70b] Resetting plugins due to page load.
+2014-07-03 07:46:45.897 Well Done Good[26724:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:57:12.855 Well Done Good[28133:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:57:12.875 Well Done Good[28133:70b] Unlimited access to network resources
+2014-07-03 07:57:12.921 Well Done Good[28133:70b] [CDVTimer][file] 1.855016ms
+2014-07-03 07:57:13.029 Well Done Good[28133:70b] [CDVTimer][splashscreen] 107.781053ms
+2014-07-03 07:57:13.030 Well Done Good[28133:70b] [CDVTimer][TotalPluginStartup] 110.885024ms
+2014-07-03 07:57:13.755 Well Done Good[28133:70b] Resetting plugins due to page load.
+2014-07-03 07:57:14.101 Well Done Good[28133:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 07:59:23.763 Well Done Good[28571:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 07:59:23.781 Well Done Good[28571:70b] Unlimited access to network resources
+2014-07-03 07:59:23.811 Well Done Good[28571:70b] [CDVTimer][file] 1.065016ms
+2014-07-03 07:59:23.911 Well Done Good[28571:70b] [CDVTimer][splashscreen] 99.395037ms
+2014-07-03 07:59:23.912 Well Done Good[28571:70b] [CDVTimer][TotalPluginStartup] 101.521015ms
+2014-07-03 07:59:24.683 Well Done Good[28571:70b] Resetting plugins due to page load.
+2014-07-03 07:59:24.976 Well Done Good[28571:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 08:00:19.766 Well Done Good[28862:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 08:00:19.792 Well Done Good[28862:70b] Unlimited access to network resources
+2014-07-03 08:00:19.826 Well Done Good[28862:70b] [CDVTimer][file] 1.208007ms
+2014-07-03 08:00:19.853 Well Done Good[28862:70b] [CDVTimer][splashscreen] 26.166022ms
+2014-07-03 08:00:19.853 Well Done Good[28862:70b] [CDVTimer][TotalPluginStartup] 28.361022ms
+2014-07-03 08:00:20.296 Well Done Good[28862:70b] Resetting plugins due to page load.
+2014-07-03 08:00:20.541 Well Done Good[28862:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 08:01:26.886 Well Done Good[29172:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 08:01:26.918 Well Done Good[29172:70b] Unlimited access to network resources
+2014-07-03 08:01:26.961 Well Done Good[29172:70b] [CDVTimer][file] 1.358986ms
+2014-07-03 08:01:27.091 Well Done Good[29172:70b] [CDVTimer][splashscreen] 128.477991ms
+2014-07-03 08:01:27.091 Well Done Good[29172:70b] [CDVTimer][TotalPluginStartup] 130.989015ms
+2014-07-03 08:01:27.676 Well Done Good[29172:70b] Resetting plugins due to page load.
+2014-07-03 08:01:27.896 Well Done Good[29172:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 08:01:32.422 Well Done Good[29172:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-07-03 08:01:32.426 Well Done Good[29172:70b] THREAD WARNING: ['InAppBrowser'] took '263.719238' ms. Plugin should use a background thread.
+2014-07-03 08:01:41.394 Well Done Good[29172:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-07-03 08:05:36.759 Well Done Good[29962:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 08:05:36.890 Well Done Good[29962:70b] Unlimited access to network resources
+2014-07-03 08:05:37.095 Well Done Good[29962:70b] [CDVTimer][file] 1.814961ms
+2014-07-03 08:05:37.256 Well Done Good[29962:70b] [CDVTimer][splashscreen] 160.130024ms
+2014-07-03 08:05:37.256 Well Done Good[29962:70b] [CDVTimer][TotalPluginStartup] 163.118005ms
+2014-07-03 08:05:38.120 Well Done Good[29962:70b] Resetting plugins due to page load.
+2014-07-03 08:05:38.484 Well Done Good[29962:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 08:06:34.589 Well Done Good[30253:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 08:06:34.614 Well Done Good[30253:70b] Unlimited access to network resources
+2014-07-03 08:06:34.647 Well Done Good[30253:70b] [CDVTimer][file] 1.177967ms
+2014-07-03 08:06:34.696 Well Done Good[30253:70b] [CDVTimer][splashscreen] 48.379004ms
+2014-07-03 08:06:34.697 Well Done Good[30253:70b] [CDVTimer][TotalPluginStartup] 50.793946ms
+2014-07-03 08:06:35.246 Well Done Good[30253:70b] Resetting plugins due to page load.
+2014-07-03 08:06:35.490 Well Done Good[30253:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 08:08:11.798 Well Done Good[30627:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 08:08:11.828 Well Done Good[30627:70b] Unlimited access to network resources
+2014-07-03 08:08:11.894 Well Done Good[30627:70b] [CDVTimer][file] 1.169980ms
+2014-07-03 08:08:11.923 Well Done Good[30627:70b] [CDVTimer][splashscreen] 28.593004ms
+2014-07-03 08:08:11.924 Well Done Good[30627:70b] [CDVTimer][TotalPluginStartup] 30.846000ms
+2014-07-03 08:08:12.352 Well Done Good[30627:70b] Resetting plugins due to page load.
+2014-07-03 08:08:12.587 Well Done Good[30627:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 08:09:52.581 Well Done Good[31006:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 08:09:52.598 Well Done Good[31006:70b] Unlimited access to network resources
+2014-07-03 08:09:52.630 Well Done Good[31006:70b] [CDVTimer][file] 1.187027ms
+2014-07-03 08:09:52.659 Well Done Good[31006:70b] [CDVTimer][splashscreen] 28.204978ms
+2014-07-03 08:09:52.659 Well Done Good[31006:70b] [CDVTimer][TotalPluginStartup] 30.501008ms
+2014-07-03 08:09:53.055 Well Done Good[31006:70b] Resetting plugins due to page load.
+2014-07-03 08:09:53.254 Well Done Good[31006:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 08:16:03.469 Well Done Good[31918:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 08:16:03.487 Well Done Good[31918:70b] Unlimited access to network resources
+2014-07-03 08:16:03.519 Well Done Good[31918:70b] [CDVTimer][file] 1.164973ms
+2014-07-03 08:16:03.573 Well Done Good[31918:70b] [CDVTimer][splashscreen] 53.246021ms
+2014-07-03 08:16:03.574 Well Done Good[31918:70b] [CDVTimer][TotalPluginStartup] 55.873036ms
+2014-07-03 08:16:04.357 Well Done Good[31918:70b] Resetting plugins due to page load.
+2014-07-03 08:16:04.678 Well Done Good[31918:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 08:17:32.615 Well Done Good[32273:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 08:17:32.622 Well Done Good[32273:70b] Unlimited access to network resources
+2014-07-03 08:17:32.640 Well Done Good[32273:70b] [CDVTimer][file] 1.052976ms
+2014-07-03 08:17:32.648 Well Done Good[32273:70b] [CDVTimer][splashscreen] 7.932007ms
+2014-07-03 08:17:32.649 Well Done Good[32273:70b] [CDVTimer][TotalPluginStartup] 9.998024ms
+2014-07-03 08:17:32.716 Well Done Good[32273:70b] Resetting plugins due to page load.
+2014-07-03 08:17:32.847 Well Done Good[32273:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 08:20:35.355 Well Done Good[32803:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 08:20:35.384 Well Done Good[32803:70b] Unlimited access to network resources
+2014-07-03 08:20:35.438 Well Done Good[32803:70b] [CDVTimer][file] 1.326978ms
+2014-07-03 08:20:35.468 Well Done Good[32803:70b] [CDVTimer][splashscreen] 29.067039ms
+2014-07-03 08:20:35.468 Well Done Good[32803:70b] [CDVTimer][TotalPluginStartup] 31.529963ms
+2014-07-03 08:20:35.982 Well Done Good[32803:70b] Resetting plugins due to page load.
+2014-07-03 08:20:36.195 Well Done Good[32803:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading
+2014-07-03 08:20:54.992 Well Done Good[32803:70b] THREAD WARNING: ['Camera'] took '1230.965088' ms. Plugin should use a background thread.
+2014-07-03 08:26:54.134 Well Done Good[33807:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-03 08:26:54.284 Well Done Good[33807:70b] Unlimited access to network resources
+2014-07-03 08:26:54.816 Well Done Good[33807:70b] [CDVTimer][file] 1.202941ms
+2014-07-03 08:26:55.138 Well Done Good[33807:70b] [CDVTimer][splashscreen] 321.819007ms
+2014-07-03 08:26:55.139 Well Done Good[33807:70b] [CDVTimer][TotalPluginStartup] 324.001014ms
+2014-07-03 08:26:56.618 Well Done Good[33807:70b] Resetting plugins due to page load.
+2014-07-03 08:26:57.444 Well Done Good[33807:70b] Finished load of: file:///Users/kmager/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5CA3B8C7-CD6C-4AA5-B85A-736FF099E4B8/Well%20Done%20Good.app/www/index.html#/loading

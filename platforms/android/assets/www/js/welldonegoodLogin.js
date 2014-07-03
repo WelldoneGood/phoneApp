@@ -3,18 +3,31 @@ angular.module('virtuosumLogin', ['ui.bootstrap', 'virtuosumLoginControllers', '
 var virtuosumLoginControllers = angular.module('virtuosumLoginControllers', []);
 var virtuosumLoginServices = angular.module('virtuosumLoginServices', []);
 var virtuosumLoginEndpoints = {
-    // login: 'http:/www.welldonegood.com/wp-login.php?loggedout=true',
-    login: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/wp-login.php?loggedout=true',
+    login: 'http://welldonegood.com/wp-login.php?loggedout=true',
+    termsOfService: 'http://www.welldonegood.com/terms-of-service/',
+    // login: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/wp-login.php?loggedout=true',
     mainAppLocation: 'welldonegood.html'
 }
 ;
 virtuosumLoginControllers.controller('loginController', ['$scope', '$rootScope', '$window', 'LoginService',
 	function($scope, $rootScope, $window, LoginService) {
 		$scope.loginReady = false;
+        $scope.isios = false;
 
 		$rootScope.$on('deviceready', function() {
+            if (device.platform === 'iOS' && parseFloat(device.version) >= 7.0) {
+                $scope.isios = true;
+            }
 			$scope.completeFacebookLogin();
         }, false);
+
+        $scope.viewTermsOfService = function() {
+            if (device.platform == "Android") {
+                window.open(virtuosumLoginEndpoints.termsOfService, '_blank', 'location=yes,closebuttoncaption=Done');
+            } else {
+                window.open(virtuosumLoginEndpoints.termsOfService, '_blank', 'location=no,closebuttoncaption=Done');    
+            }
+        }
 
         $scope.loginWithFacebook = function() {
         	openFB.login('email', $scope.completeFacebookLogin,$scope.loginError);
@@ -106,6 +119,7 @@ virtuosumLoginServices.service('LoginService', ['$http', '$q',
             $http.post(virtuosumLoginEndpoints.login, loginData, config)
                 .success(function(data, status, header) {
                     virtuosumLoginDeferred.resolve(true);
+                    
                 })
                 .error(function(data) {
                     virtuosumLoginDeferred.resolve(false);

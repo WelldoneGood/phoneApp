@@ -4,6 +4,19 @@ body {
 	font-family: Papyrus, fantasy;
 }
 
+.loader {
+	font-size: 2em;
+    padding: 20px;
+    color: gainsboro;
+    text-shadow: 1px 1px 10px black;
+}
+
+.main-logo {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+}
+
 .navbar-header {
 	/*background-color: rgb(127, 23, 31);*/
 	/*background-color: LightSeaGreen;*/

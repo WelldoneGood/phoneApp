@@ -1,57 +1,65 @@
-<div class="panel panel-default">
-	<div class="panel-heading">Select Deed</div>
-	<div class="panel-body">
-		<select id="deedSelect" class="form-control" ng-model="deed" ng-options="deed.title for deed in deedIdeas"></select>
-	</div>
-</div>
-
-<div ng-show="userDeed" class="panel panel-default">
-	<div class="panel-heading">Deed Name</div>
-	<div class="panel-body">
-		<input type="text" class="form-control" ng-model="userDeedTitle" placeholder="Deed Name">
-	</div>
-</div>
-
-<div class="panel panel-default">
-	<div class="panel-heading">Deed Details</div>
-	<div class="panel-body">
-
-		<div ng-hide="photo">
-			<i class="fa fa-video-camera fa-4x pull-left fa-border"></i>
+<div class="full-height overflow-y-scroll">
+	<div class="panel panel-default">
+		<div class="panel-heading">Select Deed</div>
+		<div class="panel-body">
+			<select id="deedSelect" class="form-control" ng-model="deed" ng-options="deed.title for deed in deedIdeas"></select>
 		</div>
+	</div>
+
+	<div ng-show="userDeed" class="panel panel-default">
+		<div class="panel-heading">Deed Name</div>
+		<div class="panel-body">
+			<input type="text" class="form-control" ng-model="userDeedTitle" placeholder="Deed Name">
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">Deed Details</div>
+		<div class="panel-body">
+
+			<div ng-hide="photo">
+				<i class="fa fa-video-camera fa-4x pull-left fa-border"></i>
+			</div>
+			<div ng-show="photo">
+				<img class="deed-preview" src="{{photo}}"/>
+			</div>
+			<textarea ng-model="userDeedDetails" class="capture-text-description" placeholder="Details about your good deed">
+				
+			</textarea>
+			<div class="row">
+			   	<center>Photos are subject to our privacy policy.</center>
+			   	<center><a ui-sref="privacy">Find out more here</a></center>
+			</div>
+		</div>
+	</div>
+
+	<div class="bottom-padding">
+		<div class="row" ng-hide="photo">
+			<div class="col-xs-6">
+				<button type="button" class="btn btn-primary btn-block btn-sm" ng-click="captureGoodDeed()">
+					<i class="fa fa-camera-retro fa-1x"></i> Capture
+				</button>
+			</div>
+			<div class="col-xs-6">
+				<button type="button" class="btn btn-primary btn-block btn-sm" ng-click="postExistingGoodDeed()">
+					<i class="fa fa-cloud-upload fa-1x"></i> Upload
+				</button>
+			</div>
+		</div>
+
 		<div ng-show="photo">
-			<img class="deed-preview" src="{{photo}}"/>
-		</div>
-		<textarea ng-model="userDeedDetails" class="capture-text-description" placeholder="Details about your good deed">
-			
-		</textarea>
-	</div>
-</div>
-
-<div class="bottom-padding">
-	<div class="row" ng-hide="photo">
-		<div class="col-xs-6">
-			<button type="button" class="btn btn-primary btn-block btn-sm" ng-click="captureGoodDeed()">
-				<i class="fa fa-camera-retro fa-1x"></i> Capture
-			</button>
-		</div>
-		<div class="col-xs-6">
-			<button type="button" class="btn btn-primary btn-block btn-sm" ng-click="postExistingGoodDeed()">
-				<i class="fa fa-cloud-upload fa-1x"></i> Upload
-			</button>
-		</div>
-	</div>
-
-	<div class="row" ng-show="photo">
-		<div class="col-xs-6">
-			<center>
-	   			<button ng-click="post()" type="button" class="btn btn-primary btn-lg btn-block">Post</button>
-	   		</center>
-	   	</div>
-	   	<div class="col-xs-6">
-	   		<center>
-	   			<button ng-click="cancelPost()" type="button" class="btn btn-primary btn-lg btn-block">Cancel</button>
-	   		</center>
+			<div class="row">
+				<div class="col-xs-6">
+					<center>
+			   			<button ng-click="post()" type="button" class="btn btn-primary btn-lg btn-block">Post</button>
+			   		</center>
+			   	</div>
+			   	<div class="col-xs-6">
+			   		<center>
+			   			<button ng-click="cancelPost()" type="button" class="btn btn-primary btn-lg btn-block">Cancel</button>
+			   		</center>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

@@ -1,6 +1,17 @@
 var welldonegoodApp = angular.module('welldonegood', ['ui.bootstrap', 'ui.router', 'welldonegoodControllers', 'welldonegoodServices'])
     .config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/deedFeed");
+        $urlRouterProvider.otherwise("/loading");
+
+        $stateProvider.state('loading', {
+            url: "/loading",
+            templateUrl: "partials/loading.html"
+        });
+
+        $stateProvider.state('login', {
+            url: "/login",
+            templateUrl: "partials/login.html",
+            controller: 'loginController'
+        });
 
         $stateProvider.state('toDeed', {
             url: "/toDeed",
@@ -38,26 +49,36 @@ var welldonegoodApp = angular.module('welldonegood', ['ui.bootstrap', 'ui.router
             controller: 'deedFeedController'
         });
 
+        //deed routing handled in mainPageController
         $stateProvider.state('deed', {
             url: '/deed/:deedURL'
+        });
+
+        //privacy policy routing handled in mainPageController
+        $stateProvider.state('privacy', {
+            url: '/privacy'
         });
     });
 
 var welldonegoodControllers = angular.module('welldonegoodControllers', []);
 var welldonegoodServices = angular.module('welldonegoodServices', []);
 var welldonegoodEndpoints = {
-    // deedFeedLocation: 'http://www.welldonegood.com/?json=get_recent_posts',
-    // completedDeedLocation: 'http://www.welldonegood.com/?json=get_author_posts',
-    // deedIdeaLocation: 'http://www.welldonegood.com/?json=get_category_posts&slug=deedinspirations',
-    // nonceLocation: 'http://www.welldonegood.com/?json=get_nonce&controller=posts&method=create_post&callback=?',
-    // createPost: 'http://www.welldonegood.com/?json=create_post',
-    // userInformation: 'http://www.welldonegood.com/?json=currentuser/get_currentuserinfo'
-    deedFeedLocation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=get_recent_posts',
-    completedDeedLocation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=get_author_posts',
-    deedIdeaLocation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=get_category_posts&slug=deedinspirations',
-    nonceLocation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=get_nonce&controller=posts&method=create_post&callback=?',
-    createPost: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=create_post',
-    userInformation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=currentuser/get_currentuserinfo'
+    facebookAppID: '609372205806860',
+    login: 'http://welldonegood.com/wp-login.php?loggedout=true',
+    deedFeedLocation: 'http://welldonegood.com/?json=get_recent_posts',
+    completedDeedLocation: 'http://welldonegood.com/?json=get_author_posts',
+    deedIdeaLocation: 'http://welldonegood.com/?json=get_category_posts&slug=deedinspirations',
+    nonceLocation: 'http://welldonegood.com/?json=get_nonce&controller=posts&method=create_post&callback=?',
+    createPost: 'http://welldonegood.com/?json=create_post',
+    userInformation: 'http://welldonegood.com/?json=currentuser/get_currentuserinfo',
+    termsOfService: 'http://www.welldonegood.com/terms-of-service/',
+    privacyPolicy: 'http://www.welldonegood.com/privacy-policy'
+    // deedFeedLocation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=get_recent_posts',
+    // completedDeedLocation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=get_author_posts',
+    // deedIdeaLocation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=get_category_posts&slug=deedinspirations',
+    // nonceLocation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=get_nonce&controller=posts&method=create_post&callback=?',
+    // createPost: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=create_post',
+    // userInformation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=currentuser/get_currentuserinfo'
 }
 ;
 welldonegoodControllers.controller('captureController' , ['$scope', '$stateParams', '$state', 'DeedService', 'PhotoService',
@@ -68,7 +89,12 @@ welldonegoodControllers.controller('captureController' , ['$scope', '$stateParam
 
 		DeedService.getAllToDeeds().then(function(data){
 			if(data) {
-				$scope.deedIdeas = data.posts;
+				if (data.posts && data.posts.length > 1) {
+					$scope.deedIdeas = data.posts;
+				} else {
+					$scope.deedIdeas = [];
+				}
+
 				$scope.deedIdeas.push({
 					id: null,
 					title: "Create your own"
@@ -151,7 +177,7 @@ welldonegoodControllers.controller('captureController' , ['$scope', '$stateParam
 
 			DeedService.postDeed($scope.photo, deedPost).then(function(result) {
 				console.log(result);
-				if (result) {
+				if (result && result.status && result.status !== "error") {
 					$scope.posting = false;
 					$state.go('share', {deedURL: encodeURIComponent(result.post.url)});
 				} else {
@@ -162,7 +188,7 @@ welldonegoodControllers.controller('captureController' , ['$scope', '$stateParam
 						var alertTitle = "Post Deed";
 						var alertButtons = 'Retry, Cancel';
 
-						navigator.notification.confirm(alertMessage, $scope.post, alertTitle, alertButtons);	
+						navigator.notification.confirm(alertMessage, postNotificationCallback, alertTitle, alertButtons);	
 					} else {
 						alert("Error loading Data");
 					}
@@ -187,6 +213,12 @@ welldonegoodControllers.controller('captureController' , ['$scope', '$stateParam
 		var notificationCallback = function(buttonIndex){
 			if (buttonIndex === 1) {
 				$scope.loadFeedData();
+			}
+		}
+
+		var postNotificationCallback = function(buttonIndex){
+			if (buttonIndex === 1) {
+				$scope.post();
 			}
 		}
 	}]);;
@@ -361,10 +393,7 @@ welldonegoodControllers.controller('deedFeedController', ['$scope', '$state', 'D
 		}
 
 		var handler = function() {
-	        // a small timeout to demo the loading state
-	        setTimeout(function() {
-	            $scope.loadFeedData();
-	        }, 1000);
+	        $scope.loadFeedData();
 	    };
 
 	    SwipeToReloadService.init('deedFeedContainer', 'deedFeedPullrefresh', 'deedFeedPullrefresh-icon', 'deedFeedContent', handler);
@@ -443,20 +472,109 @@ welldonegoodControllers.controller('deedFeedController', ['$scope', '$state', 'D
 		init();		
 	}
 ]);;
-welldonegoodControllers.controller('mainPageController' , ['$scope', '$rootScope', '$state',
-	function($scope, $rootScope,$state) {
+welldonegoodControllers.controller('loginController', ['$scope', '$rootScope', '$window', '$state', 'loginService',
+	function($scope, $rootScope, $window, $state, loginService) {
+		$scope.loginReady = true;
+        console.log("Going to login - HERE");
+
+        $scope.viewTermsOfService = function() {
+            if (device.platform == "Android") {
+                window.open(welldonegoodEndpoints.termsOfService, '_blank', 'location=yes,closebuttoncaption=Done');
+            } else {
+                window.open(welldonegoodEndpoints.termsOfService, '_blank', 'location=no,closebuttoncaption=Done');    
+            }
+        }
+
+        $scope.loginWithFacebook = function() {
+            $scope.loginReady = false;
+        	openFB.login('email', $scope.completeFacebookLogin,$scope.loginError);
+        }
+
+        $scope.completeFacebookLogin = function() {
+            //Check to see if the facebook login worked
+        	var loginInformation = loginService.verifyLogin();
+        	if (loginInformation.token) {
+                //get the welldonegood cookie based on the loginInformation from the service
+	      		loginService.getWellDoneGoodCookie(loginInformation)
+	      		.then(function(result){
+	      			if (result) {
+                        rootScope.$broadcast('loginComplete');
+	      				$state.go('deedFeed');
+	      			} else {
+	      				$scope.loginError();
+	      			}
+	            });
+	        } else {
+            	$scope.loginReady = true;
+            }
+        }
+
+        $scope.loginError = function() {
+        	$scope.loginReady = true;
+
+        	if (navigator && navigator.notification) {
+        		var alertMessage = "There was an error during Login.  Please Try again.";
+        		var alertTitle = "Login Error";
+        		var alertButtons = 'OK';
+
+        		navigator.notification.confirm(alertMessage, notificationCallback, alertTitle, alertButtons);	
+        	} else {
+        		alert("Error during login");
+        	}
+        }
+	}
+]);;
+welldonegoodControllers.controller('mainPageController' , ['$scope', '$rootScope', '$state', 'loginService',
+	function($scope, $rootScope,$state, loginService) {
 		$scope.showMenu = false;
+        $scope.loginComplete = false;
+        $scope.isios = false;
+
+        //The line below stores the Facebook token in localStorage instead of sessionStorage
+        openFB.init(welldonegoodEndpoints.facebookAppID, 'https://www.facebook.com/connect/login_success.html', window.localStorage);
+
+        $rootScope.$on('loginComplete', function() {
+            $scope.loginComplete = true;
+        });
+
+        $rootScope.$on('deviceready', function() {
+            if (device.platform === 'iOS' && parseFloat(device.version) >= 7.0) {
+                $scope.isios = true;
+            }
+            var loginInformation = loginService.verifyLogin();
+            if (loginInformation) {
+                loginService.getWellDoneGoodCookie(loginInformation).then(function(result){
+                    if (result) {
+                        $scope.loginComplete = true;
+                        $state.go('deedFeed');
+                    } else {
+                        $state.go('login');
+                    }
+                });
+            } else {
+                console.log("Going to login");
+                $state.go('login');
+            }
+        }, false);
 
 		$rootScope.$on('$stateChangeStart', 
             function(event, toState, toParams, fromState, fromParams){
                $scope.showMenu = false;
 
                 if(toState.name == "deed") {
-                    console.log(toParams);
                     if (device.platform == "Android") {
                         window.open(toParams.deedURL, '_blank', 'location=yes,closebuttoncaption=Done');
                     } else {
                         window.open(toParams.deedURL, '_blank', 'location=no,closebuttoncaption=Done');    
+                    }
+                    event.preventDefault();
+                }
+
+                if(toState.name == "privacy") {
+                    if (device.platform == "Android") {
+                        window.open(welldonegoodEndpoints.privacyPolicy, '_blank', 'location=yes,closebuttoncaption=Done');
+                    } else {
+                        window.open(welldonegoodEndpoints.privacyPolicy, '_blank', 'location=no,closebuttoncaption=Done');    
                     }
                     event.preventDefault();
                 }
@@ -1064,6 +1182,74 @@ welldonegoodServices.service('SwipeToReloadService', [
 		return SwipeToReloadService;
 	}
 ]);;
+welldonegoodControllers.service('loginService', ['$http', '$q',
+	function($http, $q) {
+		var loginService = {};
+        loginService.LoginType = {};
+        loginService.LoginType.facebook = 1;
+        loginService.LoginType.google = 2;
+
+    	loginService.verifyLogin = function() {
+            var loginInformation = false;
+            var token = openFB.getCredentials();
+
+            if (token) {
+                loginInformation = {
+                    type: loginService.LoginType.facebook,
+                    token: token
+                };
+            } 
+
+            return loginInformation;
+        };
+
+        loginService.getWellDoneGoodCookie = function(loginInformation) {
+    		switch(loginInformation.type) {
+                case loginService.LoginType.facebook:
+                    return loginService.getWellDoneGoodCookieFaceBook(loginInformation.token);
+                break;
+                case loginService.LoginType.google:
+                    alert("Not Implemented Yet");
+                break;
+                default:
+                    if (navigator && navigator.notification) {
+                        var alertMessage = "Please select one of the login options.  Please Try again.";
+                        var alertTitle = "Unknow Login";
+                        var alertButtons = 'OK';
+                        navigator.notification.confirm(alertMessage, notificationCallback, alertTitle, alertButtons);   
+                    } else {
+                        alert("Error during login");
+                    }
+                break;
+            }
+    	};
+
+        loginService.getWellDoneGoodCookieFaceBook = function(token) {
+            var welldonegoodLoginDeferred = $q.defer();
+            var loginData = 'fball_redirect=&action=fball&fball_access_token=' + token;
+
+            var config = {
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                }
+            };
+
+            $http.post(welldonegoodEndpoints.login, loginData, config)
+                .success(function(data, status, header) {
+                    welldonegoodLoginDeferred.resolve(true);
+                    
+                })
+                .error(function(data) {
+                    welldonegoodLoginDeferred.resolve(false);
+                });
+
+            return welldonegoodLoginDeferred.promise;
+        };
+
+    	return loginService;
+	}
+]);
+;
 welldonegoodApp.directive('whenScrolled', function() {
     return function(scope, elm, attr) {
         var raw = elm[0];
