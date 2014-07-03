@@ -68,10 +68,13 @@ body {
 }
 
 .panel-default {
-	border-color: #59A9F9;
+	/*border-color: #59A9F9;*/
+	border-color: #283744;
 }
 
 .panel-default>.panel-heading {
 	/*background-color: lightgoldenrodyellow;*/
-	background-color: #59A9F9;
+	/*background-color: #59A9F9;*/
+	background-color: #283744;
+	color: whitesmoke;
 }
