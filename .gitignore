@@ -1,3 +1,5 @@
+.DS_Store
 *.log
-*/welldonegood.js
-*.xcuserstate
+**/welldonegood.js
+**/UserInterfaceState.xcuserstate
+platforms/*
