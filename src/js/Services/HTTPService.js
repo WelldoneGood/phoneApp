@@ -6,7 +6,7 @@ welldonegoodServices.service('HTTPService', ['$http', '$q',
       var httpDeferred = $q.defer();
       $http.get(url)
       .success(function(data) {
-            console.log(url,data);
+            //console.log(url,data);
             httpDeferred.resolve(data);
       })
       .error(function(data) {
@@ -25,7 +25,7 @@ welldonegoodServices.service('HTTPService', ['$http', '$q',
                 var url2 = urlNestedFunction(url, responseData);
                 $http.get(url2)
                 .success(function(data) {
-                    // console.log(url, responseData, data,url2);
+                    //console.log(url, responseData, data,url2);
                     httpDeferred.resolve(data);
                 })
                 .error(function(data) {
@@ -52,11 +52,11 @@ welldonegoodServices.service('HTTPService', ['$http', '$q',
                     data = "nonce=" + nonceResponse.nonce;
                 }
 
-                console.log(data);
+                //console.log(data);
 
                 $http.post(url, data, config)
                 .success(function(data, status, header) {
-                    console.log(data, status, header)
+                    //console.log(data, status, header)
                     httpDeferred.resolve(data);
                 })
                 .error(function(data) {
