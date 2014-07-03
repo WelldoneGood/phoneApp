@@ -39,6 +39,8 @@ body {
 	background-color: whitesmoke;
 }
 
+/*BUTTON CONFIGURATION*/
+
 .facebook-login {
     background: #3b5998;
     color: white;
@@ -60,11 +62,23 @@ body {
 }
 
 .btn-default {
-	background-color: #3E3E3E;
+	border-color: #283744;	
+	background-color: #283744;
 }
 
 .btn-default:hover {
-	background-color: #3E3E3E;
+	border-color: #283744;	
+	background-color: #283744;
+}
+
+.btn-primary  {
+	border-color: #283744;	
+	background-color: #283744;
+}
+
+.btn-primary:hover  {
+	border-color: #283744;	
+	background-color: #283744;
 }
 
 .panel-default {
