@@ -4,3 +4,4 @@
 **/welldonegood.css
 **/UserInterfaceState.xcuserstate
 platforms/**/www/*
+platforms/android/ant-build/**
