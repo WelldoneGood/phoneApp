@@ -33,10 +33,13 @@ welldonegoodControllers.controller('mobilizeController' , ['$scope', '$state', '
             }
 
             DeedService.postToDeed($scope.deed).then(function(data) {
-            	if (data) {
+            	if (data && data.status === "ok") {
             		$state.go('toDeed');
             	} else {
             		if (navigator && navigator.notification) {
+                        if (data.status) {
+                            console.log("ERROR: " + data.status);
+                        }
 	                	var alertMessage = "There was an issue creating your deed inspiration.  Please try again.";
 	                	var alertTitle = "Error";
 	                	var alertButtons = ['OK'];
