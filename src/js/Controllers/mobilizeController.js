@@ -1,7 +1,10 @@
-welldonegoodControllers.controller('mobilizeController' , ['$scope', '$state', 'DeedService',
-	function($scope, $state, DeedService) {
+welldonegoodControllers.controller('mobilizeController' , ['$scope', '$state', '$modal', 'DeedService',
+	function($scope, $state, $modal, DeedService) {
 		$scope.deed = {};
+        $scope.posting = false;
 		$scope.submitIdea = function() {
+            $scope.posting = true;
+
 			if (!$scope.deed.title || $scope.deed.title == undefined) {
                 //throw an alert
                 if (navigator && navigator.notification) {
@@ -56,4 +59,21 @@ welldonegoodControllers.controller('mobilizeController' , ['$scope', '$state', '
         var notificationCallback = function(button) {
         	return;
         }
+
+        var postingModal;
+        $scope.$watch('posting', function(posting) {
+            console.log(posting)
+            if (posting) {
+                postingModal = $modal.open({
+                    templateUrl: "MobilizeModal.html",
+                    windowClass: "loading-modal",
+                    backdrop: "static",
+                    keyboard: false
+                });
+            } else {
+                if (postingModal) {
+                    postingModal.close();
+                }
+            }
+        },true);
     }]);
