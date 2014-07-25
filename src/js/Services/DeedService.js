@@ -42,7 +42,7 @@ welldonegoodServices.service('DeedService', ['HTTPService', '$q',
 			"title=ToDeed: " + deed.title,
 			"content=" + deed.content,
 			"status=publish",
-			"categories=deedinspirations"
+			"categories=toDeed"
 			];
 
 			var config = {

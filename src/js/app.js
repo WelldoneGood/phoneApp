@@ -67,7 +67,7 @@ var welldonegoodEndpoints = {
     login: 'http://welldonegood.com/wp-login.php?loggedout=true',
     deedFeedLocation: 'http://welldonegood.com/?json=get_recent_posts',
     completedDeedLocation: 'http://welldonegood.com/?json=get_author_posts',
-    deedIdeaLocation: 'http://welldonegood.com/?json=get_category_posts&slug=deedinspirations',
+    deedIdeaLocation: 'http://welldonegood.com/?json=get_category_posts&slug=toDeed',
     nonceLocation: 'http://welldonegood.com/?json=get_nonce&controller=posts&method=create_post&callback=?',
     createPost: 'http://welldonegood.com/?json=create_post',
     userInformation: 'http://welldonegood.com/?json=currentuser/get_currentuserinfo',
