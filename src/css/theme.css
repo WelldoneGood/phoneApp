@@ -21,9 +21,10 @@ body {
 	/*background-color: rgb(127, 23, 31);*/
 	/*background-color: LightSeaGreen;*/
 	background-color: rgb(53,94,59);
-	/*color: gainsboro;*/
+	color: gainsboro;
 	/*color: #3E3E3E;*/
-	color: whitesmoke;
+	/*color: whitesmoke;*/
+	/*color: #f46438;*/
 	width: 100%;
 }
 
@@ -67,28 +68,36 @@ body {
 }
 
 .btn-default:hover {
-	border-color: #283744;	
-	background-color: #283744;
+	/*border-color: #283744;	
+	background-color: #283744;*/
+	border-color: #f46438;	
+	background-color: #f46438;
 }
 
 .btn-primary  {
-	border-color: #283744;	
-	background-color: #283744;
+	/*border-color: #283744;	
+	background-color: #283744;*/
+	border-color: #f46438;	
+	background-color: #f46438;
 }
 
 .btn-primary:hover  {
-	border-color: #283744;	
-	background-color: #283744;
+	/*border-color: #283744;	
+	background-color: #283744;*/
+	border-color: #f46438;	
+	background-color: #f46438;
 }
 
 .panel-default {
 	/*border-color: #59A9F9;*/
-	border-color: #283744;
+	/*border-color: #283744;*/
+	border-color: #f46438;
 }
 
 .panel-default>.panel-heading {
 	/*background-color: lightgoldenrodyellow;*/
 	/*background-color: #59A9F9;*/
-	background-color: #283744;
+	/*background-color: #283744;*/
+	background-color: #f46438;
 	color: whitesmoke;
 }
