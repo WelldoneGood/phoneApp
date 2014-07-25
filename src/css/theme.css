@@ -40,6 +40,10 @@ body {
 	background-color: whitesmoke;
 }
 
+.modal-content {
+    color: rgb(53,94,59);
+}
+
 /*BUTTON CONFIGURATION*/
 
 .facebook-login {

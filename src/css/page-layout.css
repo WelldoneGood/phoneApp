@@ -8,6 +8,14 @@ body {
     /*background-color: rgb(127,23,31);*/
 }
 
+.loading-modal {
+    top: 45%;
+    left: 25%;
+    right: 25%;
+    font-size: 1.5em;
+    line-height: 3em;
+}
+
 .capture-text-description {
     margin-top: 0px;
     margin-bottom: 0px;
