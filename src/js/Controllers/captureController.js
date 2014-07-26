@@ -1,5 +1,5 @@
-welldonegoodControllers.controller('captureController' , ['$scope', '$stateParams', '$state', 'DeedService', 'PhotoService',
-	function($scope, $stateParams, $state, DeedService, PhotoService) {
+welldonegoodControllers.controller('captureController' , ['$scope', '$stateParams', '$state', '$modal', 'DeedService', 'PhotoService',
+	function($scope, $stateParams, $state, $modal, DeedService, PhotoService) {
 		$scope.userDeed = false;
 		$scope.posting = false;
 		$scope.photo = null;
@@ -91,7 +91,7 @@ welldonegoodControllers.controller('captureController' , ['$scope', '$stateParam
 				$scope.posting = false;
 				return;
 			}
-
+			
 			DeedService.postDeed($scope.photo, deedPost).then(function(result) {
 				console.log(result);
 				if (result && result.status && result.status !== "error") {
@@ -126,6 +126,23 @@ welldonegoodControllers.controller('captureController' , ['$scope', '$stateParam
 				$scope.userDeed = false;
 			}
 		});
+
+		var postingModal;
+        $scope.$watch('posting', function(posting) {
+            console.log(posting)
+            if (posting) {
+                postingModal = $modal.open({
+                    templateUrl: "PostingModal.html",
+                    windowClass: "loading-modal",
+                    backdrop: "static",
+                    keyboard: false
+                });
+            } else {
+                if (postingModal) {
+                    postingModal.close();
+                }
+            }
+        },true);
 
 		var notificationCallback = function(buttonIndex){
 			if (buttonIndex === 1) {
