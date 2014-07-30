@@ -20,9 +20,8 @@ welldonegoodControllers.controller('completedDeedController', ['$scope', '$rootS
 
 		var handler = function() {
 	        // a small timeout to demo the loading state
-	        setTimeout(function() {
-	            $scope.loadCompletedDeedsData();
-	        }, 1000);
+	        SwipeToReloadService.slideUp();
+	        $scope.loadCompletedDeedsData();
 	    };
 
 	    SwipeToReloadService.init('completedDeedContainer', 'completedDeedPullrefresh', 'completedDeedPullrefresh-icon', 'completedDeedContent', handler);
@@ -38,11 +37,12 @@ welldonegoodControllers.controller('completedDeedController', ['$scope', '$rootS
 				return;
 			}
 
+			$scope.feedLoading = false;
 			$scope.currentPageNumber++;
+			SwipeToReloadService.slideUp();
 			DeedService.getCompletedDeeds($scope.currentPageNumber).then(function(data){
 				$scope.loadSuccess = true;
 
-				SwipeToReloadService.slideUp();
 				if (data) {
 					$scope.totalPages = data.pages;
 					angular.forEach(data.posts, function(post, key){
@@ -58,12 +58,13 @@ welldonegoodControllers.controller('completedDeedController', ['$scope', '$rootS
 
 		$scope.loadCompletedDeedsData = function() {
 			$scope.loadSuccess = true;
+			$scope.feedLoading = true;
+			SwipeToReloadService.slideUp();
 
 			DeedService.getCompletedDeeds(1).then(function(data){
 				$scope.loadSuccess = true;
 				$scope.feedLoading = false;
 				$scope.currentPageNumber = 1;
-				SwipeToReloadService.slideUp();
 
 				if (data) {
 					$scope.totalPages = data.pages;
