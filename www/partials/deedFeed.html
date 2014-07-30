@@ -9,6 +9,9 @@
 
     <div id="content" class="full-height">
         <div id="deedFeedContent" class="list-group full-height subpage-body" when-scrolled="loadNextPage()">
+            <div class="content-loader top-bottom-padding" ng-show="feedLoading">
+                <center><i class="fa fa-refresh fa-spin"></i> Loading</center>
+            </div>
             <div class="bg-danger top-bottom-padding" ng-hide="feedSuccess" ng-click="loadFeedData()">
                 <center><i class="fa fa-warning "> Could not load Deed Feed</i></center>
             </div>

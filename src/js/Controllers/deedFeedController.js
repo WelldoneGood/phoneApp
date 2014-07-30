@@ -24,6 +24,7 @@ welldonegoodControllers.controller('deedFeedController', ['$scope', '$state', 'D
 				return;
 			}
 
+			$scope.feedLoading = true;
 			$scope.currentPageNumber++;
 			DeedService.getDeedFeed($scope.currentPageNumber).then(function(data){
 				$scope.feedSuccess = true;
@@ -34,10 +35,10 @@ welldonegoodControllers.controller('deedFeedController', ['$scope', '$state', 'D
 					angular.forEach(data.posts, function(post, key){
 						$scope.deedFeed.push(post);
 					});		
-					$scope.feedLoading = false;			
+					$scope.feedLoading = false;	
 				} else {
 					$scope.feedLoading = false;
-					$scope.feedSuccess = false;					
+					$scope.feedSuccess = false;
 				}
 			});
 		}
@@ -51,6 +52,7 @@ welldonegoodControllers.controller('deedFeedController', ['$scope', '$state', 'D
 		$scope.loadFeedData = function() {
 			$scope.feedLoading = true;
 			$scope.feedSuccess = true;
+			SwipeToReloadService.slideUp();
 
 			//hard code pulling page number 1
 			DeedService.getDeedFeed(1).then(function(data){
@@ -59,7 +61,7 @@ welldonegoodControllers.controller('deedFeedController', ['$scope', '$state', 'D
 				$scope.feedLoading = false;
 				$scope.feedSuccess = true;
 
-				SwipeToReloadService.slideUp();
+				// SwipeToReloadService.slideUp();
 				if (data) {
 					$scope.totalPages = data.pages;
 					$scope.deedFeed = data.posts;
