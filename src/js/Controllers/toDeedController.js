@@ -2,6 +2,7 @@ welldonegoodControllers.controller('toDeedController', ['$scope', '$rootScope', 
 	function($scope, $rootScope, $state, DeedService, SwipeToReloadService) {
 		$scope.deedIdeas = [];
 		$scope.feedSuccess = true;
+		$scope.feedLoading = false;
 		$scope.currentPageNumber = 1;
 		$scope.totalPages = 1;
 
@@ -17,10 +18,8 @@ welldonegoodControllers.controller('toDeedController', ['$scope', '$rootScope', 
 		}
 
 		var handler = function() {
-	        // a small timeout to demo the loading state
-	        setTimeout(function() {
-	            $scope.loadIdeaData();
-	        }, 1000);
+			SwipeToReloadService.slideUp();
+	        $scope.loadIdeaData();
 	    };
 
 	    SwipeToReloadService.init('deedIdeasContainer', 'deedIdeasPullrefresh', 'deedIdeasPullrefresh-icon', 'deedIdeasContent', handler);
@@ -36,11 +35,12 @@ welldonegoodControllers.controller('toDeedController', ['$scope', '$rootScope', 
 				return;
 			}
 
+			$scope.feedLoading = true;
+			SwipeToReloadService.slideUp();
 			$scope.currentPageNumber++;
 			DeedService.getToDeeds($scope.currentPageNumber).then(function(data){
 				$scope.feedSuccess = true;
 
-				SwipeToReloadService.slideUp();
 				if (data) {
 					$scope.totalPages = data.pages;
 					angular.forEach(data.posts, function(post, key){
@@ -57,6 +57,7 @@ welldonegoodControllers.controller('toDeedController', ['$scope', '$rootScope', 
 		$scope.loadIdeaData = function() {
 			$scope.feedLoading = true;
 			$scope.feedSuccess = true;
+			SwipeToReloadService.slideUp();
 
 			DeedService.getToDeeds(1).then(function(data){
 				//always reset the page number onload
@@ -64,7 +65,6 @@ welldonegoodControllers.controller('toDeedController', ['$scope', '$rootScope', 
 				$scope.feedLoading = false;
 				$scope.feedSuccess = true;
 
-				SwipeToReloadService.slideUp();
 				if (data) {
 					$scope.totalPages = data.pages;
 					$scope.deedIdeas = data.posts;

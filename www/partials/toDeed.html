@@ -9,6 +9,9 @@
 
 	<div id="content" class="full-height">
 		<div id="deedIdeasContent"  class="list-group full-height overflow-y-scroll" when-scrolled="loadNextPage()">
+			<div class="content-loader top-bottom-padding" ng-show="feedLoading">
+                <center><i class="fa fa-refresh fa-spin"></i> Loading</center>
+            </div>
 			<div class="list-group-item" ng-repeat="deed in deedIdeas">
 				<!-- <i class="fa fa-ambulance fa-2x pull-left fa-border"></i> -->
 				<h4 class="list-group-item-heading">{{deed.title}}</h4>
