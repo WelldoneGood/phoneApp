@@ -47,7 +47,7 @@ welldonegoodServices.service('PhotoService', ['$http', '$q',
                     navigator.camera.getPicture(function(imageData) {
                         photo.resolve(imageData);
                     }, function(error) {
-                        if (error.indexOf("cancelled") == -1) {
+                        if (error.indexOf("cancelled") == -1 && error.indexOf("no image selected") == -1 ) {
                             alert(error);
                         }
 
