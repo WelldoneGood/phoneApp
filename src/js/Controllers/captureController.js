@@ -115,7 +115,7 @@ welldonegoodControllers.controller('captureController' , ['$scope', '$stateParam
 
 		$scope.cancelPost = function() {
 			console.log("cancel")
-			$state.go('ideas');
+			$state.go('toDeed');
 		}
 
 		$scope.$watch('deed', function(newValue, oldValue) {
