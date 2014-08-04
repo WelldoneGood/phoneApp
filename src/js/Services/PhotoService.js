@@ -2,6 +2,8 @@ welldonegoodServices.service('PhotoService', ['$http', '$q',
     function($http, $q) {
             var pictureSource;   // picture source
             var destinationType; // sets the format of returned value
+            var targetWidth = 650;
+            var targetHeight = 650;
 
             var PhotoService = {
                 init: function() {
@@ -23,9 +25,14 @@ welldonegoodServices.service('PhotoService', ['$http', '$q',
                         }
 
                         photo.reject();
-                    }, { quality: 90, allowEdit: true,
+                    }, { 
+                        quality: 90,
+                        targetWidth: targetWidth,
+                        targetHeight: targetHeight,
+                        allowEdit: true,
                         destinationType: destinationType.FILE_URI,
-                        saveToPhotoAlbum: true });
+                        saveToPhotoAlbum: true
+                    });
 
                     return photo.promise;
                 },
@@ -45,9 +52,14 @@ welldonegoodServices.service('PhotoService', ['$http', '$q',
                         }
 
                         photo.reject();
-                    }, { quality: 90, allowEdit: false,
+                    }, { 
+                        quality: 90,
+                        targetWidth: targetWidth,
+                        targetHeight: targetHeight,
+                        allowEdit: false,
                         destinationType: destinationType.FILE_URI,
-                        sourceType: pictureSource.SAVEDPHOTOALBUM });
+                        sourceType: pictureSource.SAVEDPHOTOALBUM
+                    });
 
                     return photo.promise;
                 }
