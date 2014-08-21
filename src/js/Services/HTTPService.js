@@ -6,7 +6,12 @@ welldonegoodServices.service('HTTPService', ['$http', '$q',
       var httpDeferred = $q.defer();
       $http.get(url)
       .success(function(data) {
-            //console.log(url,data);
+            if (data.posts) {
+                angular.forEach(data.posts, function(posts) {
+                    posts.title = posts.title.replace(/&#8211;/g,'-');
+                    posts.title = posts.title.replace(/&#038;/g,'&');
+                });
+            }
             httpDeferred.resolve(data);
       })
       .error(function(data) {
