@@ -67,12 +67,12 @@ body {
 
 .no-share {
 	color: black;
-	background: red;
+	background: #A00000;
 }
 
 .no-share:hover {
 	color: black;
-	background: red;
+	background: #A00000;
 }
 
 .btn-default {
