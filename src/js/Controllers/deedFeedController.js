@@ -92,7 +92,7 @@ welldonegoodControllers.controller('deedFeedController', ['$scope', '$state', 'D
 		$scope.viewDeedDetails = function(deed) {
 			var isDeedInspiration = false;
 			angular.forEach(deed.categories, function(category, key){
-				if (category.slug == "deedinspirations") {
+				if (category.slug == "toDeed") {
 					isDeedInspiration = true;
 					return;
 				}
