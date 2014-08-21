@@ -52,6 +52,15 @@ welldonegoodControllers.controller('mainPageController' , ['$scope', '$rootScope
                     }
                     event.preventDefault();
                 }
+
+                if(toState.name == "terms") {
+                    if (device.platform == "Android") {
+                        window.open(welldonegoodEndpoints.termsOfService, '_blank', 'location=yes,closebuttoncaption=Done');
+                    } else {
+                        window.open(welldonegoodEndpoints.termsOfService, '_blank', 'location=no,closebuttoncaption=Done');    
+                    }
+                    event.preventDefault();
+                }
             });
 
 		$scope.toggleMenu = function() {

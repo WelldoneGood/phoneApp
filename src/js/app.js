@@ -58,6 +58,11 @@ var welldonegoodApp = angular.module('welldonegood', ['ui.bootstrap', 'ui.router
         $stateProvider.state('privacy', {
             url: '/privacy'
         });
+
+        //terms policy routing handled in mainPageController
+        $stateProvider.state('terms', {
+            url: '/terms'
+        });
     });
 
 var welldonegoodControllers = angular.module('welldonegoodControllers', []);
@@ -71,8 +76,8 @@ var welldonegoodEndpoints = {
     nonceLocation: 'http://welldonegood.com/?json=get_nonce&controller=posts&method=create_post&callback=?',
     createPost: 'http://welldonegood.com/?json=create_post',
     userInformation: 'http://welldonegood.com/?json=currentuser/get_currentuserinfo',
-    termsOfService: 'http://www.welldonegood.com/terms-of-service/',
-    privacyPolicy: 'http://www.welldonegood.com/privacy-policy'
+    termsOfService: 'http://welldonegood.com/?page_id=31/',
+    privacyPolicy: 'http://welldonegood.com/?page_id=26'
     // deedFeedLocation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=get_recent_posts',
     // completedDeedLocation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=get_author_posts',
     // deedIdeaLocation: 'http://ec2-54-186-243-218.us-west-2.compute.amazonaws.com/virt-wp/?json=get_category_posts&slug=deedinspirations',
