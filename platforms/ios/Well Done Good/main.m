@@ -20,8 +20,8 @@
 //  main.m
 //  Well Done Good
 //
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
+//  Created by Kevin Mager.
+//  Copyright Welldone Good Inc 2014. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

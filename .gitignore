@@ -5,3 +5,4 @@
 **/UserInterfaceState.xcuserstate
 platforms/**/www/*
 platforms/android/ant-build/**
+**/build.prop
