@@ -33,21 +33,24 @@
 
     <title>Well Done Good</title>
 </head>
-<body>  
+<body onload="wellDoneGoodInit()">  
 
     <script>
-        document.addEventListener("deviceready", function() {
-            var body = document.body;
-            var scope = angular.element(body).scope();
-            var rootScope = scope.$root;
-            scope.$apply(function(){
-                rootScope.$broadcast('deviceready');
-            });
 
-            setTimeout(function() {
-                navigator.splashscreen.hide();
-            }, 2000);
-        }, false);
+        function wellDoneGoodInit() {
+            document.addEventListener("deviceready", function() {
+                var body = document.body;
+                var scope = angular.element(body).scope();
+                var rootScope = scope.$root;
+                scope.$apply(function(){
+                    rootScope.$broadcast('deviceready');
+                });
+
+                setTimeout(function() {
+                    navigator.splashscreen.hide();
+                }, 2000);
+            }, false);
+        }
     </script>
     <div class="page-container full-height" ng-class="{'ios-header-fix' : isios}" ng-controller="mainPageController">
 
