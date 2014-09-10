@@ -24,7 +24,7 @@ welldonegoodControllers.controller('loginController', ['$scope', '$rootScope', '
 	      		loginService.getWellDoneGoodCookie(loginInformation)
 	      		.then(function(result){
 	      			if (result) {
-                        rootScope.$broadcast('loginComplete');
+                        $rootScope.$broadcast('loginComplete');
 	      				$state.go('deedFeed');
 	      			} else {
 	      				$scope.loginError();
